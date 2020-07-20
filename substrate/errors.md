@@ -30,6 +30,8 @@ This page lists the errors that can be encountered in the different modules.
 
 - **[recovery](#recovery)**
 
+- **[scheduler](#scheduler)**
+
 - **[session](#session)**
 
 - **[society](#society)**
@@ -107,6 +109,9 @@ ___
 
 ## contracts
  
+### InsufficientBalance
+- **summary**:   Performing the requested transfer would have brought the contract below the subsistence threshold. No transfer is allowed to do this in order to allow for a tombstone to be created. Use `ext_terminate` to remove a contract without leaving a tombstone behind. 
+ 
 ### InvalidContractOrigin
 - **summary**:   An origin TrieId written in the current block. 
  
@@ -124,6 +129,12 @@ ___
  
 ### InvalidTombstone
 - **summary**:   Tombstones don't match. 
+ 
+### OutOfGas
+- **summary**:   The executed contract exhausted its gas limit. 
+ 
+### OutputBufferTooSmall
+- **summary**:   The output buffer supplied to a contract API call was too small. 
 
 ___
 
@@ -342,6 +353,9 @@ ___
 ### DuplicateOffenceReport
 - **summary**:   A given equivocation report is valid but already previously reported. 
  
+### InvalidEquivocationProof
+- **summary**:   An equivocation proof provided as part of an equivocation report is invalid. 
+ 
 ### InvalidKeyOwnershipProof
 - **summary**:   A key ownership proof provided as part of an equivocation report is invalid. 
  
@@ -358,6 +372,9 @@ ___
 
 
 ## identity
+ 
+### AlreadyClaimed
+- **summary**:   Account ID is already named. 
  
 ### EmptyIndex
 - **summary**:   Empty index. 
@@ -385,6 +402,12 @@ ___
  
 ### NotNamed
 - **summary**:   Account isn't named. 
+ 
+### NotOwned
+- **summary**:   Sub-account isn't owned by sender. 
+ 
+### NotSub
+- **summary**:   Sender is not a sub-account. 
  
 ### StickyJudgement
 - **summary**:   Sticky judgement. 
@@ -531,6 +554,20 @@ ___
  
 ### ZeroThreshold
 - **summary**:   Threshold must be greater than zero 
+
+___
+
+
+## scheduler
+ 
+### FailedToCancel
+- **summary**:   Failed to cancel a scheduled call 
+ 
+### FailedToSchedule
+- **summary**:   Failed to schedule a call 
+ 
+### TargetBlockNumberInPast
+- **summary**:   Given target block number is in the past. 
 
 ___
 

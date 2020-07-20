@@ -6,6 +6,8 @@ The following sections contain Extrinsics methods are part of the default Substr
 
 - **[authorship](#authorship)**
 
+- **[babe](#babe)**
+
 - **[balances](#balances)**
 
 - **[contracts](#contracts)**
@@ -65,6 +67,19 @@ ___
 ### setUncles(new_uncles: `Vec<Header>`)
 - **interface**: `api.tx.authorship.setUncles`
 - **summary**:   Provide a set of uncles. 
+
+___
+
+
+## babe
+ 
+### reportEquivocation(equivocation_proof: `BabeEquivocationProof`, key_owner_proof: `KeyOwnerProof`)
+- **interface**: `api.tx.babe.reportEquivocation`
+- **summary**:   Report authority equivocation/misbehavior. This method will verify the equivocation proof and validate the given key ownership proof against the extracted offender. If both are valid, the offence will be reported. 
+ 
+### reportEquivocationUnsigned(equivocation_proof: `BabeEquivocationProof`, key_owner_proof: `KeyOwnerProof`)
+- **interface**: `api.tx.babe.reportEquivocationUnsigned`
+- **summary**:   Report authority equivocation/misbehavior. This method will verify the equivocation proof and validate the given key ownership proof against the extracted offender. If both are valid, the offence will be reported. This extrinsic must be called unsigned and it is expected that only block authors will call it (validated in `ValidateUnsigned`), as such if the block author is defined it will be defined as the equivocation reporter. 
 
 ___
 
@@ -1120,8 +1135,12 @@ ___
 ### reportEquivocation(equivocation_proof: `GrandpaEquivocationProof`, key_owner_proof: `KeyOwnerProof`)
 - **interface**: `api.tx.grandpa.reportEquivocation`
 - **summary**:   Report voter equivocation/misbehavior. This method will verify the equivocation proof and validate the given key ownership proof against the extracted offender. If both are valid, the offence will be reported. 
+ 
+### reportEquivocationUnsigned(equivocation_proof: `GrandpaEquivocationProof`, key_owner_proof: `KeyOwnerProof`)
+- **interface**: `api.tx.grandpa.reportEquivocationUnsigned`
+- **summary**:   Report voter equivocation/misbehavior. This method will verify the equivocation proof and validate the given key ownership proof against the extracted offender. If both are valid, the offence will be reported. 
 
-  Since the weight of the extrinsic is 0, in order to avoid DoS by submission of invalid equivocation reports, a mandatory pre-validation of the extrinsic is implemented in a `SignedExtension`. 
+  This extrinsic must be called unsigned and it is expected that only block authors will call it (validated in `ValidateUnsigned`), as such if the block author is defined it will be defined as the equivocation reporter. 
 
 ___
 
@@ -1132,7 +1151,7 @@ ___
 - **interface**: `api.tx.identity.addRegistrar`
 - **summary**:   Add a registrar to the system. 
 
-  The dispatch origin for this call must be `RegistrarOrigin` or `Root`. 
+  The dispatch origin for this call must be `T::RegistrarOrigin`. 
 
   - `account`: the account of the registrar. 
 
@@ -1149,6 +1168,14 @@ ___
   - One event.
 
   \# \</weight> 
+ 
+### addSub(sub: `LookupSource`, data: `Data`)
+- **interface**: `api.tx.identity.addSub`
+- **summary**:   Add the given account to the sender's subs. 
+
+  Payment: Balance reserved by a previous `set_subs` call for one sub will be repatriated to the sender. 
+
+  The dispatch origin for this call must be _Signed_ and the sender must have a registered sub identity of `sub`. 
  
 ### cancelRequest(reg_index: `RegistrarIndex`)
 - **interface**: `api.tx.identity.cancelRequest`
@@ -1212,7 +1239,7 @@ ___
 
   Payment: Reserved balances from `set_subs` and `set_identity` are slashed and handled by `Slash`. Verification request deposits are not returned; they should be cancelled manually using `cancel_request`. 
 
-  The dispatch origin for this call must be _Root_ or match `T::ForceOrigin`. 
+  The dispatch origin for this call must match `T::ForceOrigin`. 
 
   - `target`: the account whose identity the judgement is upon. This must be an account   with a registered identity. 
 
@@ -1261,6 +1288,30 @@ ___
   - One event.
 
   \# \</weight> 
+ 
+### quitSub()
+- **interface**: `api.tx.identity.quitSub`
+- **summary**:   Remove the sender as a sub-account. 
+
+  Payment: Balance reserved by a previous `set_subs` call for one sub will be repatriated to the sender (*not* the original depositor). 
+
+  The dispatch origin for this call must be _Signed_ and the sender must have a registered super-identity. 
+
+  NOTE: This should not normally be used, but is provided in the case that the non- controller of an account is maliciously registered as a sub-account. 
+ 
+### removeSub(sub: `LookupSource`)
+- **interface**: `api.tx.identity.removeSub`
+- **summary**:   Remove the given account from the sender's subs. 
+
+  Payment: Balance reserved by a previous `set_subs` call for one sub will be repatriated to the sender. 
+
+  The dispatch origin for this call must be _Signed_ and the sender must have a registered sub identity of `sub`. 
+ 
+### renameSub(sub: `LookupSource`, data: `Data`)
+- **interface**: `api.tx.identity.renameSub`
+- **summary**:   Alter the associated name of the given sub-account. 
+
+  The dispatch origin for this call must be _Signed_ and the sender must have a registered sub identity of `sub`. 
  
 ### requestJudgement(reg_index: `Compact<RegistrarIndex>`, max_fee: `Compact<BalanceOf>`)
 - **interface**: `api.tx.identity.requestJudgement`
@@ -1677,7 +1728,7 @@ ___
 
   \# \</weight> 
  
-### asMulti(threshold: `u16`, other_signatories: `Vec<AccountId>`, maybe_timepoint: `Option<Timepoint>`, call: `Bytes`, store_call: `bool`, max_weight: `Weight`)
+### asMulti(threshold: `u16`, other_signatories: `Vec<AccountId>`, maybe_timepoint: `Option<Timepoint>`, call: `OpaqueCall`, store_call: `bool`, max_weight: `Weight`)
 - **interface**: `api.tx.multisig.asMulti`
 - **summary**:   Register approval for a dispatch to be made from a deterministic composite account if approved by a total of `threshold - 1` of `other_signatories`. 
 
@@ -2282,6 +2333,16 @@ ___
 
   \# \</weight> 
  
+### scheduleAfter(after: `BlockNumber`, maybe_periodic: `Option<Period>`, priority: `Priority`, call: `Call`)
+- **interface**: `api.tx.scheduler.scheduleAfter`
+- **summary**:   Anonymously schedule a task after a delay. 
+
+  \# \<weight>
+
+   Same as [`schedule`]. 
+
+  \# \</weight> 
+ 
 ### scheduleNamed(id: `Bytes`, when: `BlockNumber`, maybe_periodic: `Option<Period>`, priority: `Priority`, call: `Call`)
 - **interface**: `api.tx.scheduler.scheduleNamed`
 - **summary**:   Schedule a named task. 
@@ -2301,6 +2362,16 @@ ___
       - Write: Agenda, Lookup
 
   - Will use base weight of 35 which should be good for more than 30 scheduled calls
+
+  \# \</weight> 
+ 
+### scheduleNamedAfter(id: `Bytes`, after: `BlockNumber`, maybe_periodic: `Option<Period>`, priority: `Priority`, call: `Call`)
+- **interface**: `api.tx.scheduler.scheduleNamedAfter`
+- **summary**:   Schedule a named task after a delay. 
+
+  \# \<weight>
+
+   Same as [`schedule_named`]. 
 
   \# \</weight> 
 
@@ -2855,7 +2926,7 @@ ___
 - **interface**: `api.tx.staking.cancelDeferredSlash`
 - **summary**:   Cancel enactment of a deferred slash. 
 
-  Can be called by either the root origin or the `T::SlashCancelOrigin`. 
+  Can be called by the `T::SlashCancelOrigin`. 
 
   Parameters: era and indices of the slashes for that era to kill. 
 
@@ -3017,7 +3088,11 @@ ___
 
   - Contains a limited number of reads and writes.
 
-  -----------N is the Number of payouts for the validator (including the validator) Base Weight: 110 + 54.2 * N µs (Median Slopes) DB Weight: 
+  -----------N is the Number of payouts for the validator (including the validator) Base Weight: 
+
+  - Reward Destination Staked: 110 + 54.2 * N µs (Median Slopes)
+
+  - Reward Destination Controller (Creating): 120 + 41.95 * N µs (Median Slopes)DB Weight: 
 
   - Read: EraElectionStatus, CurrentEra, HistoryDepth, ErasValidatorReward,        ErasStakersClipped, ErasRewardPoints, ErasValidatorPrefs (8 items) 
 
@@ -3793,7 +3868,7 @@ ___
 - **interface**: `api.tx.technicalMembership.addMember`
 - **summary**:   Add a member `who` to the set. 
 
-  May only be called from `AddOrigin` or root. 
+  May only be called from `T::AddOrigin`. 
  
 ### changeKey(new: `AccountId`)
 - **interface**: `api.tx.technicalMembership.changeKey`
@@ -3806,28 +3881,32 @@ ___
 ### clearPrime()
 - **interface**: `api.tx.technicalMembership.clearPrime`
 - **summary**:   Remove the prime member if it exists. 
+
+  May only be called from `T::PrimeOrigin`. 
  
 ### removeMember(who: `AccountId`)
 - **interface**: `api.tx.technicalMembership.removeMember`
 - **summary**:   Remove a member `who` from the set. 
 
-  May only be called from `RemoveOrigin` or root. 
+  May only be called from `T::RemoveOrigin`. 
  
 ### resetMembers(members: `Vec<AccountId>`)
 - **interface**: `api.tx.technicalMembership.resetMembers`
 - **summary**:   Change the membership to a new set, disregarding the existing membership. Be nice and pass `members` pre-sorted. 
 
-  May only be called from `ResetOrigin` or root. 
+  May only be called from `T::ResetOrigin`. 
  
 ### setPrime(who: `AccountId`)
 - **interface**: `api.tx.technicalMembership.setPrime`
 - **summary**:   Set the prime member. Must be a current member. 
+
+  May only be called from `T::PrimeOrigin`. 
  
 ### swapMember(remove: `AccountId`, add: `AccountId`)
 - **interface**: `api.tx.technicalMembership.swapMember`
 - **summary**:   Swap out one member `remove` for another `add`. 
 
-  May only be called from `SwapOrigin` or root. 
+  May only be called from `T::SwapOrigin`. 
 
   Prime membership is *not* passed from `remove` to `add`, if extant. 
 
@@ -3870,6 +3949,8 @@ ___
 ### approveProposal(proposal_id: `Compact<ProposalIndex>`)
 - **interface**: `api.tx.treasury.approveProposal`
 - **summary**:   Approve a proposal. At a later time, the proposal will be allocated to the beneficiary and the original deposit will be returned. 
+
+  May only be called from `T::ApproveOrigin`. 
 
   \# \<weight>
 
@@ -3924,6 +4005,8 @@ ___
 ### rejectProposal(proposal_id: `Compact<ProposalIndex>`)
 - **interface**: `api.tx.treasury.rejectProposal`
 - **summary**:   Reject a proposed spend. The original deposit will be slashed. 
+
+  May only be called from `T::RejectOrigin`. 
 
   \# \<weight>
 
@@ -4052,31 +4135,15 @@ ___
 
 ## utility
  
-### asLimitedSub(index: `u16`, call: `Call`)
-- **interface**: `api.tx.utility.asLimitedSub`
+### asDerivative(index: `u16`, call: `Call`)
+- **interface**: `api.tx.utility.asDerivative`
 - **summary**:   Send a call through an indexed pseudonym of the sender. 
 
   Filter from origin are passed along. The call will be dispatched with an origin which use the same filter as the origin of this call. 
 
-  NOTE: If you need to ensure that any account-based filtering is not honored (i.e. because you expect `proxy` to have been used prior in the call stack and you do not want the call restrictions to apply to any sub-accounts), then use `as_sub` instead. 
+  NOTE: If you need to ensure that any account-based filtering is not honored (i.e. because you expect `proxy` to have been used prior in the call stack and you do not want the call restrictions to apply to any sub-accounts), then use `as_multi_threshold_1` in the Multisig pallet instead. 
 
-  The dispatch origin for this call must be _Signed_. 
-
-  \# \<weight>
-
-   
-
-  - Base weight: 2.861 µs
-
-  - Plus the weight of the `call`
-
-  \# \</weight> 
- 
-### asSub(index: `u16`, call: `Call`)
-- **interface**: `api.tx.utility.asSub`
-- **summary**:   Send a call through an indexed pseudonym of the sender. 
-
-  NOTE: If you need to ensure that any account-based filtering is honored (i.e. because you expect `proxy` to have been used prior in the call stack and you want it to apply to any sub-accounts), then use `as_limited_sub` instead. 
+  NOTE: Prior to version *12, this was called `as_limited_sub`. 
 
   The dispatch origin for this call must be _Signed_. 
 

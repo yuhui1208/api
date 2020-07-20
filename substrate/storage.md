@@ -419,7 +419,7 @@ ___
 
 ## multisig
  
-### calls(`[u8;32]`): `Option<(Bytes,AccountId,BalanceOf)>`
+### calls(`[u8;32]`): `Option<(OpaqueCall,AccountId,BalanceOf)>`
 - **interface**: `api.query.multisig.calls`
  
 ### multisigs(`AccountId, [u8;32]`): `Option<Multisig>`
@@ -502,6 +502,12 @@ ___
 ### lookup(`Bytes`): `Option<TaskAddress>`
 - **interface**: `api.query.scheduler.lookup`
 - **summary**:   Lookup from identity to the block number and index of the task. 
+ 
+### storageVersion(): `Releases`
+- **interface**: `api.query.scheduler.storageVersion`
+- **summary**:   Storage version of the pallet. 
+
+  New networks start with last version. 
 
 ___
 

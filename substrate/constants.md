@@ -296,7 +296,7 @@ ___
  
 ### maxIterations: `u32`
 - **interface**: `api.consts.staking.maxIterations`
-- **summary**:   Maximum number of balancing iterations to run in the offchain submission.  
+- **summary**:   Maximum number of balancing iterations to run in the offchain submission. 
 
   If set to 0, balance_solution will not be executed at all. 
  
@@ -316,9 +316,9 @@ ___
  
 ### slashDeferDuration: `EraIndex`
 - **interface**: `api.consts.staking.slashDeferDuration`
-- **summary**:   Number of eras that slashes are deferred by, after computation.  
+- **summary**:   Number of eras that slashes are deferred by, after computation. 
 
-  This should be less than the bonding duration.  Set to 0 if slashes should be applied immediately, without opportunity for intervention. 
+  This should be less than the bonding duration. Set to 0 if slashes should be applied immediately, without opportunity for intervention. 
 
 ___
 

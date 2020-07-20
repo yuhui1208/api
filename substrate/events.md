@@ -93,9 +93,6 @@ ___
 ### ContractExecution(`AccountId`, `Bytes`)
 - **summary**:   An event deposited upon execution of a contract from the account. 
  
-### Dispatched(`AccountId`, `bool`)
-- **summary**:   A call was dispatched from the given account. The bool signals whether it was successful execution or not. 
- 
 ### Evicted(`AccountId`, `bool`)
 - **summary**:   Contract has been evicted and is now in tombstone state. 
 
@@ -108,8 +105,8 @@ ___
 ### Instantiated(`AccountId`, `AccountId`)
 - **summary**:   Contract deployed by address at the specified address. 
  
-### Restored(`AccountId`, `AccountId`, `Hash`, `Balance`, `bool`)
-- **summary**:   Restoration for a contract has been initiated. 
+### Restored(`AccountId`, `AccountId`, `Hash`, `Balance`)
+- **summary**:   Restoration for a contract has been successful. 
 
   #### Params 
 
@@ -120,14 +117,9 @@ ___
   - `code_hash`: `Hash`: Code hash of the restored contract
 
   - `rent_allowance: `Balance`: Rent allowance of the restored contract
-
-  - `success`: `bool`: True if the restoration was successful
  
 ### ScheduleUpdated(`u32`)
 - **summary**:   Triggered when the current schedule is updated. 
- 
-### Transfer(`AccountId`, `AccountId`, `Balance`)
-- **summary**:   Transfer happened `from` to `to` with given `value` as part of a `call` or `instantiate`. 
 
 ___
 
@@ -270,6 +262,15 @@ ___
  
 ### RegistrarAdded(`RegistrarIndex`)
 - **summary**:   A registrar was added. 
+ 
+### SubIdentityAdded(`AccountId`, `AccountId`, `Balance`)
+- **summary**:   A sub-identity (first) was added to an identity (second) and the deposit paid. 
+ 
+### SubIdentityRemoved(`AccountId`, `AccountId`, `Balance`)
+- **summary**:   A sub-identity (first) was removed from an identity (second) and the deposit freed. 
+ 
+### SubIdentityRevoked(`AccountId`, `AccountId`, `Balance`)
+- **summary**:   A sub-identity (first arg) was cleared, and the given deposit repatriated from the main identity account (second arg) to the sub-identity account. 
 
 ___
 
@@ -396,6 +397,9 @@ ___
  
 ### DefenderVote(`AccountId`, `bool`)
 - **summary**:   A vote has been placed for a defending member (voter, vote) 
+ 
+### Deposit(`Balance`)
+- **summary**:   Some funds were deposited into the society account. 
  
 ### Founded(`AccountId`)
 - **summary**:   The society is founded by the given identity. 
