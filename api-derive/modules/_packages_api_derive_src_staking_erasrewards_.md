@@ -15,7 +15,7 @@
 
 ▸ **_erasRewards**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasRewards.ts:24](https://github.com/polkadot-js/api/blob/c7e6e4003/packages/api-derive/src/staking/erasRewards.ts#L24)*
+*Defined in [packages/api-derive/src/staking/erasRewards.ts:24](https://github.com/polkadot-js/api/blob/1cf4d6b9b/packages/api-derive/src/staking/erasRewards.ts#L24)*
 
 **Parameters:**
 
@@ -40,7 +40,7 @@ ___
 
 ▸ **erasRewards**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasRewards.ts:56](https://github.com/polkadot-js/api/blob/c7e6e4003/packages/api-derive/src/staking/erasRewards.ts#L56)*
+*Defined in [packages/api-derive/src/staking/erasRewards.ts:56](https://github.com/polkadot-js/api/blob/1cf4d6b9b/packages/api-derive/src/staking/erasRewards.ts#L56)*
 
 **Parameters:**
 
