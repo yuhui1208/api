@@ -14,6 +14,6 @@
 
 ▸ **main**(): *void*
 
-*Defined in [packages/typegen/src/interfacesTs.ts:12](https://github.com/polkadot-js/api/blob/56e4cbdb2/packages/typegen/src/interfacesTs.ts#L12)*
+*Defined in [packages/typegen/src/interfacesTs.ts:12](https://github.com/polkadot-js/api/blob/3cf67c975/packages/typegen/src/interfacesTs.ts#L12)*
 
 **Returns:** *void*

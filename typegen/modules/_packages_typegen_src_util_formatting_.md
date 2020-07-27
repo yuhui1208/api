@@ -14,7 +14,7 @@
 
 ▸ **HEADER**(`type`: "chain" | "defs"): *string*
 
-*Defined in [packages/typegen/src/util/formatting.ts:25](https://github.com/polkadot-js/api/blob/56e4cbdb2/packages/typegen/src/util/formatting.ts#L25)*
+*Defined in [packages/typegen/src/util/formatting.ts:25](https://github.com/polkadot-js/api/blob/3cf67c975/packages/typegen/src/util/formatting.ts#L25)*
 
 **Parameters:**
 
