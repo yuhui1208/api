@@ -11,5 +11,6 @@
 * ["packages/types-known/src/spec/centrifuge-chain"](modules/_packages_types_known_src_spec_centrifuge_chain_.md)
 * ["packages/types-known/src/spec/kusama"](modules/_packages_types_known_src_spec_kusama_.md)
 * ["packages/types-known/src/spec/polkadot"](modules/_packages_types_known_src_spec_polkadot_.md)
+* ["packages/types-known/src/spec/rococo"](modules/_packages_types_known_src_spec_rococo_.md)
 * ["packages/types-known/src/spec/westend"](modules/_packages_types_known_src_spec_westend_.md)
 * ["packages/types-known/src/warnings"](modules/_packages_types_known_src_warnings_.md)
