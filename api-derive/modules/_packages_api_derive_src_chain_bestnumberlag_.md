@@ -14,7 +14,7 @@
 
 ▸ **bestNumberLag**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/chain/bestNumberLag.ts:26](https://github.com/polkadot-js/api/blob/740348b48/packages/api-derive/src/chain/bestNumberLag.ts#L26)*
+*Defined in [packages/api-derive/src/chain/bestNumberLag.ts:26](https://github.com/polkadot-js/api/blob/97b5c699b/packages/api-derive/src/chain/bestNumberLag.ts#L26)*
 
 **`name`** bestNumberLag
 
