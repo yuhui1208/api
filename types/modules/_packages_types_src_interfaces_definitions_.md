@@ -33,6 +33,7 @@
 * [parachains](_packages_types_src_interfaces_definitions_.md#parachains)
 * [payment](_packages_types_src_interfaces_definitions_.md#payment)
 * [poll](_packages_types_src_interfaces_definitions_.md#poll)
+* [proxy](_packages_types_src_interfaces_definitions_.md#proxy)
 * [purchase](_packages_types_src_interfaces_definitions_.md#purchase)
 * [recovery](_packages_types_src_interfaces_definitions_.md#recovery)
 * [rpc](_packages_types_src_interfaces_definitions_.md#rpc)
@@ -210,6 +211,12 @@ ___
 ###  poll
 
 • **poll**:
+
+___
+
+###  proxy
+
+• **proxy**:
 
 ___
 
