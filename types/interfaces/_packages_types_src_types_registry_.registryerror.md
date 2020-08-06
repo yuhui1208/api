@@ -21,7 +21,7 @@
 
 • **documentation**: *string[]*
 
-*Defined in [packages/types/src/types/registry.ts:58](https://github.com/polkadot-js/api/blob/a8d1dd063/packages/types/src/types/registry.ts#L58)*
+*Defined in [packages/types/src/types/registry.ts:58](https://github.com/polkadot-js/api/blob/1beaf9f20/packages/types/src/types/registry.ts#L58)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **index**: *number*
 
-*Defined in [packages/types/src/types/registry.ts:59](https://github.com/polkadot-js/api/blob/a8d1dd063/packages/types/src/types/registry.ts#L59)*
+*Defined in [packages/types/src/types/registry.ts:59](https://github.com/polkadot-js/api/blob/1beaf9f20/packages/types/src/types/registry.ts#L59)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [packages/types/src/types/registry.ts:60](https://github.com/polkadot-js/api/blob/a8d1dd063/packages/types/src/types/registry.ts#L60)*
+*Defined in [packages/types/src/types/registry.ts:60](https://github.com/polkadot-js/api/blob/1beaf9f20/packages/types/src/types/registry.ts#L60)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **section**: *string*
 
-*Defined in [packages/types/src/types/registry.ts:61](https://github.com/polkadot-js/api/blob/a8d1dd063/packages/types/src/types/registry.ts#L61)*
+*Defined in [packages/types/src/types/registry.ts:61](https://github.com/polkadot-js/api/blob/1beaf9f20/packages/types/src/types/registry.ts#L61)*
