@@ -14,7 +14,7 @@
 
 ▸ **locks**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/democracy/locks.ts:56](https://github.com/polkadot-js/api/blob/1beaf9f20/packages/api-derive/src/democracy/locks.ts#L56)*
+*Defined in [packages/api-derive/src/democracy/locks.ts:56](https://github.com/polkadot-js/api/blob/9d1af1eae/packages/api-derive/src/democracy/locks.ts#L56)*
 
 **Parameters:**
 
