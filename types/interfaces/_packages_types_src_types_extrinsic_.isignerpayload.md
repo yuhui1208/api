@@ -23,7 +23,7 @@
 
 ▸ **toPayload**(): *[SignerPayloadJSON](_packages_types_src_types_extrinsic_.signerpayloadjson.md)*
 
-*Defined in [packages/types/src/types/extrinsic.ts:204](https://github.com/polkadot-js/api/blob/a1df86468/packages/types/src/types/extrinsic.ts#L204)*
+*Defined in [packages/types/src/types/extrinsic.ts:204](https://github.com/polkadot-js/api/blob/e6806ed7f/packages/types/src/types/extrinsic.ts#L204)*
 
 **Returns:** *[SignerPayloadJSON](_packages_types_src_types_extrinsic_.signerpayloadjson.md)*
 
@@ -33,6 +33,6 @@ ___
 
 ▸ **toRaw**(): *[SignerPayloadRaw](_packages_types_src_types_extrinsic_.signerpayloadraw.md)*
 
-*Defined in [packages/types/src/types/extrinsic.ts:205](https://github.com/polkadot-js/api/blob/a1df86468/packages/types/src/types/extrinsic.ts#L205)*
+*Defined in [packages/types/src/types/extrinsic.ts:205](https://github.com/polkadot-js/api/blob/e6806ed7f/packages/types/src/types/extrinsic.ts#L205)*
 
 **Returns:** *[SignerPayloadRaw](_packages_types_src_types_extrinsic_.signerpayloadraw.md)*
