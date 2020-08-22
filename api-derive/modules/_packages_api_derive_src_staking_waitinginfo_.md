@@ -14,7 +14,7 @@
 
 ▸ **waitingInfo**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/waitingInfo.ts:13](https://github.com/polkadot-js/api/blob/f7c1b6e81/packages/api-derive/src/staking/waitingInfo.ts#L13)*
+*Defined in [packages/api-derive/src/staking/waitingInfo.ts:13](https://github.com/polkadot-js/api/blob/533abb76f/packages/api-derive/src/staking/waitingInfo.ts#L13)*
 
 **Parameters:**
 
