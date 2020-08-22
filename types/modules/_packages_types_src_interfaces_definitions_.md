@@ -21,6 +21,7 @@
 * [democracy](_packages_types_src_interfaces_definitions_.md#democracy)
 * [elections](_packages_types_src_interfaces_definitions_.md#elections)
 * [engine](_packages_types_src_interfaces_definitions_.md#engine)
+* [ethereum](_packages_types_src_interfaces_definitions_.md#ethereum)
 * [evm](_packages_types_src_interfaces_definitions_.md#evm)
 * [extrinsics](_packages_types_src_interfaces_definitions_.md#extrinsics)
 * [genericAsset](_packages_types_src_interfaces_definitions_.md#genericasset)
@@ -139,6 +140,12 @@ ___
 ###  engine
 
 • **engine**:
+
+___
+
+###  ethereum
+
+• **ethereum**:
 
 ___
 

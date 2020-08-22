@@ -32,7 +32,7 @@ These primitive types are available:
 
 | **Types** | |
 | --- | --- |
-| [AccountId](classes/_packages_types_src_generic_accountid_.accountid.md) | A wrapper around an AccountId/PublicKey representation |
+| [AccountId](classes/_packages_types_src_ethereum_accountid_.accountid.md) | A wrapper around an AccountId/PublicKey representation |
 | [AccountIndex](classes/_packages_types_src_generic_accountindex_.accountindex.md) | A wrapper around an AccountIndex, which is a shortened, variable-length encoding for an Account |
 | [Address](interfaces/_packages_types_src_augment_registry_._registry_.interfacetypes.md#address) | A wrapper around an AccountId and/or AccountIndex that is encoded with a prefix |
 | [bool](interfaces/_packages_types_src_augment_registry_._registry_.interfacetypes.md#bool) | Representation for a boolean value in the system |
