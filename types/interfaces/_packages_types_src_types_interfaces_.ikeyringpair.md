@@ -11,6 +11,7 @@
 ### Properties
 
 * [address](_packages_types_src_types_interfaces_.ikeyringpair.md#address)
+* [addressRaw](_packages_types_src_types_interfaces_.ikeyringpair.md#addressraw)
 * [publicKey](_packages_types_src_types_interfaces_.ikeyringpair.md#publickey)
 * [sign](_packages_types_src_types_interfaces_.ikeyringpair.md#sign)
 
@@ -20,7 +21,15 @@
 
 • **address**: *string*
 
-*Defined in [packages/types/src/types/interfaces.ts:18](https://github.com/polkadot-js/api/blob/70e0f19ad/packages/types/src/types/interfaces.ts#L18)*
+*Defined in [packages/types/src/types/interfaces.ts:18](https://github.com/polkadot-js/api/blob/5856ce24c/packages/types/src/types/interfaces.ts#L18)*
+
+___
+
+###  addressRaw
+
+• **addressRaw**: *[Uint8Array](../classes/_packages_types_src_codec_raw_.raw.md#static-uint8array)*
+
+*Defined in [packages/types/src/types/interfaces.ts:19](https://github.com/polkadot-js/api/blob/5856ce24c/packages/types/src/types/interfaces.ts#L19)*
 
 ___
 
@@ -28,7 +37,7 @@ ___
 
 • **publicKey**: *[Uint8Array](../classes/_packages_types_src_codec_raw_.raw.md#static-uint8array)*
 
-*Defined in [packages/types/src/types/interfaces.ts:19](https://github.com/polkadot-js/api/blob/70e0f19ad/packages/types/src/types/interfaces.ts#L19)*
+*Defined in [packages/types/src/types/interfaces.ts:20](https://github.com/polkadot-js/api/blob/5856ce24c/packages/types/src/types/interfaces.ts#L20)*
 
 ___
 
@@ -36,7 +45,7 @@ ___
 
 • **sign**: *function*
 
-*Defined in [packages/types/src/types/interfaces.ts:20](https://github.com/polkadot-js/api/blob/70e0f19ad/packages/types/src/types/interfaces.ts#L20)*
+*Defined in [packages/types/src/types/interfaces.ts:21](https://github.com/polkadot-js/api/blob/5856ce24c/packages/types/src/types/interfaces.ts#L21)*
 
 #### Type declaration:
 
