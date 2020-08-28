@@ -10,7 +10,7 @@
 
 ▸ (`cb`: Callback‹any›): *[UnsubscribePromise](../modules/_packages_api_src_types_base_.md#unsubscribepromise)*
 
-*Defined in [packages/api/src/promise/Combinator.ts:12](https://github.com/polkadot-js/api/blob/9f195e940/packages/api/src/promise/Combinator.ts#L12)*
+*Defined in [packages/api/src/promise/Combinator.ts:12](https://github.com/polkadot-js/api/blob/94e9fd2b17/packages/api/src/promise/Combinator.ts#L12)*
 
 **Parameters:**
 

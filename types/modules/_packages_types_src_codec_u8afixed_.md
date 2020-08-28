@@ -18,4 +18,4 @@
 
 Ƭ **BitLength**: *8 | 16 | 32 | 64 | 128 | 160 | 256 | 264 | 512 | 520 | 1024 | 2048*
 
-*Defined in [packages/types/src/codec/U8aFixed.ts:15](https://github.com/polkadot-js/api/blob/9f195e940/packages/types/src/codec/U8aFixed.ts#L15)*
+*Defined in [packages/types/src/codec/U8aFixed.ts:15](https://github.com/polkadot-js/api/blob/94e9fd2b17/packages/types/src/codec/U8aFixed.ts#L15)*
