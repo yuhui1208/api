@@ -18,4 +18,4 @@
 
 Ƭ **AugmentedRpc**: *F*
 
-*Defined in [packages/rpc-core/src/types.jsonrpc.ts:12](https://github.com/polkadot-js/api/blob/28ef291c40/packages/rpc-core/src/types.jsonrpc.ts#L12)*
+*Defined in [packages/rpc-core/src/types.jsonrpc.ts:12](https://github.com/polkadot-js/api/blob/637069d723/packages/rpc-core/src/types.jsonrpc.ts#L12)*
