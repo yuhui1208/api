@@ -14,7 +14,7 @@
 
 ▸ **member**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/society/member.ts:21](https://github.com/polkadot-js/api/blob/391c98c845/packages/api-derive/src/society/member.ts#L21)*
+*Defined in [packages/api-derive/src/society/member.ts:21](https://github.com/polkadot-js/api/blob/6f092a1818/packages/api-derive/src/society/member.ts#L21)*
 
 **`description`** Get the member info for a society
 
