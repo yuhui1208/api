@@ -23,7 +23,7 @@
 
 • **args**: *[RegistryMetadataCallArg](_packages_types_src_types_registry_.registrymetadatacallarg.md)[]*
 
-*Defined in [packages/types/src/types/registry.ts:46](https://github.com/polkadot-js/api/blob/45fb6d44ad/packages/types/src/types/registry.ts#L46)*
+*Defined in [packages/types/src/types/registry.ts:56](https://github.com/polkadot-js/api/blob/6e6fa4a97c/packages/types/src/types/registry.ts#L56)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **name**: *[RegistryMetadataText](_packages_types_src_types_registry_.registrymetadatatext.md)*
 
-*Defined in [packages/types/src/types/registry.ts:47](https://github.com/polkadot-js/api/blob/45fb6d44ad/packages/types/src/types/registry.ts#L47)*
+*Defined in [packages/types/src/types/registry.ts:57](https://github.com/polkadot-js/api/blob/6e6fa4a97c/packages/types/src/types/registry.ts#L57)*
 
 ## Methods
 
@@ -39,6 +39,6 @@ ___
 
 ▸ **toJSON**(): *[AnyJson](../modules/_packages_types_src_types_helpers_.md#anyjson)*
 
-*Defined in [packages/types/src/types/registry.ts:49](https://github.com/polkadot-js/api/blob/45fb6d44ad/packages/types/src/types/registry.ts#L49)*
+*Defined in [packages/types/src/types/registry.ts:59](https://github.com/polkadot-js/api/blob/6e6fa4a97c/packages/types/src/types/registry.ts#L59)*
 
 **Returns:** *[AnyJson](../modules/_packages_types_src_types_helpers_.md#anyjson)*

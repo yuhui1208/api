@@ -14,6 +14,6 @@
 
 ▸ **getWSClass**(): *Promise‹typeof WebSocket›*
 
-*Defined in [packages/rpc-provider/src/ws/getWSClass.ts:5](https://github.com/polkadot-js/api/blob/45fb6d44ad/packages/rpc-provider/src/ws/getWSClass.ts#L5)*
+*Defined in [packages/rpc-provider/src/ws/getWSClass.ts:5](https://github.com/polkadot-js/api/blob/6e6fa4a97c/packages/rpc-provider/src/ws/getWSClass.ts#L5)*
 
 **Returns:** *Promise‹typeof WebSocket›*
