@@ -18,6 +18,8 @@ The following sections contain the module constants, also known as parameter typ
 
 - **[identity](#identity)**
 
+- **[indices](#indices)**
+
 - **[proxy](#proxy)**
 
 - **[recovery](#recovery)**
@@ -209,7 +211,28 @@ ___
 ___
 
 
+## indices
+ 
+### deposit: `BalanceOf`
+- **interface**: `api.consts.indices.deposit`
+- **summary**:   The deposit needed for reserving an index. 
+
+___
+
+
 ## proxy
+ 
+### announcementDepositBase: `BalanceOf`
+- **interface**: `api.consts.proxy.announcementDepositBase`
+- **summary**:   `AnnouncementDepositBase` metadata shadow. 
+ 
+### announcementDepositFactor: `BalanceOf`
+- **interface**: `api.consts.proxy.announcementDepositFactor`
+- **summary**:   `AnnouncementDepositFactor` metadata shadow. 
+ 
+### maxPending: `u32`
+- **interface**: `api.consts.proxy.maxPending`
+- **summary**:   `MaxPending` metadata shadow. 
  
 ### maxProxies: `u16`
 - **interface**: `api.consts.proxy.maxProxies`

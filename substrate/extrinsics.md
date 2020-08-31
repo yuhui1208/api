@@ -276,7 +276,7 @@ ___
 
   \# \<weight>
 
-   Complexity: O(P) where P is the number of max proposals Base Weight: .49 * P DB Weight: 
+   Complexity: O(P) where P is the number of max proposals DB Weight: 
 
   * Reads: Proposals
 
@@ -362,7 +362,7 @@ ___
 
   Requires root origin. 
 
-  NOTE: Does not enforce the expected `MAX_MEMBERS` limit on the amount of members, but       the weight estimations rely on it to estimate dispatchable weight. 
+  NOTE: Does not enforce the expected `MaxMembers` limit on the amount of members, but       the weight estimations rely on it to estimate dispatchable weight. 
 
   \# \<weight>
 
@@ -433,8 +433,6 @@ ___
 
   - Db writes: `scheduler lookup`, scheduler agenda`
 
-  - Base Weight: 36.78 + 3.277 * D µs
-
   \# \</weight> 
  
 ### cancelReferendum(ref_index: `Compact<ReferendumIndex>`)
@@ -453,8 +451,6 @@ ___
 
   - Db writes: `ReferendumInfoOf`
 
-  - Base Weight: 21.57 µs
-
   \# \</weight> 
  
 ### clearPublicProposals()
@@ -470,8 +466,6 @@ ___
   - `O(1)`.
 
   - Db writes: `PublicProps`
-
-  - Base Weight: 2.505 µs
 
   \# \</weight> 
  
@@ -501,15 +495,13 @@ ___
 
   - Complexity: `O(R)` where R is the number of referendums the voter delegating to has  voted on. Weight is charged as if maximum votes. 
 
-  - Db reads: 2*`VotingOf`, `balances locks`
+  - Db reads: 3*`VotingOf`, `origin account locks`
 
-  - Db writes: 2*`VotingOf`, `balances locks`
+  - Db writes: 3*`VotingOf`, `origin account locks`
 
   - Db reads per votes: `ReferendumInfoOf`
 
   - Db writes per votes: `ReferendumInfoOf`
-
-  - Base Weight: 65.78 + 8.229 * R µs
 
   \# \</weight> 
  
@@ -530,10 +522,6 @@ ___
   - Db reads: `ReferendumInfoOf`, `Cancellations`
 
   - Db writes: `ReferendumInfoOf`, `Cancellations`
-
-  -------------
-
-  - Base Weight: 34.25 µs
 
   \# \</weight> 
  
@@ -559,8 +547,6 @@ ___
 
   - Db writes: `NextExternal`
 
-  - Base Weight: 13.8 + .106 * V µs
-
   \# \</weight> 
  
 ### externalProposeDefault(proposal_hash: `Hash`)
@@ -581,8 +567,6 @@ ___
 
   - Db write: `NextExternal`
 
-  - Base Weight: 3.087 µs
-
   \# \</weight> 
  
 ### externalProposeMajority(proposal_hash: `Hash`)
@@ -602,8 +586,6 @@ ___
   - Complexity: `O(1)`
 
   - Db write: `NextExternal`
-
-  - Base Weight: 3.065 µs
 
   \# \</weight> 
  
@@ -637,7 +619,7 @@ ___
  
 ### noteImminentPreimage(encoded_proposal: `Bytes`)
 - **interface**: `api.tx.democracy.noteImminentPreimage`
-- **summary**:   Register the preimage for an upcoming proposal. This requires the proposal to be in the dispatch queue. No deposit is needed. 
+- **summary**:   Register the preimage for an upcoming proposal. This requires the proposal to be in the dispatch queue. No deposit is needed. When this call is successful, i.e. the preimage has not been uploaded before and matches some imminent proposal, no fee is paid. 
 
   The dispatch origin of this call must be _Signed_. 
 
@@ -647,7 +629,13 @@ ___
 
   \# \<weight>
 
-   see `weight_for::note_preimage` 
+   
+
+  - Complexity: `O(E)` with E size of `encoded_proposal` (protected by a required deposit).
+
+  - Db reads: `Preimages`
+
+  - Db writes: `Preimages`
 
   \# \</weight> 
  
@@ -667,7 +655,13 @@ ___
 
   \# \<weight>
 
-   see `weight_for::note_preimage` 
+   
+
+  - Complexity: `O(E)` with E size of `encoded_proposal` (protected by a required deposit).
+
+  - Db reads: `Preimages`
+
+  - Db writes: `Preimages`
 
   \# \</weight> 
  
@@ -697,8 +691,6 @@ ___
 
   - Db writes: `PublicPropCount`, `PublicProps`, `DepositOf`
 
-  -------------------Base Weight: 42.58 + .127 * P µs with `P` the number of proposals `PublicProps` 
-
   \# \</weight> 
  
 ### reapPreimage(proposal_hash: `Hash`, proposal_len_upper_bound: `Compact<u32>`)
@@ -721,11 +713,9 @@ ___
 
   - Complexity: `O(D)` where D is length of proposal.
 
-  - Db reads: `Preimages`
+  - Db reads: `Preimages`, provider account data
 
-  - Db writes: `Preimages`
-
-  - Base Weight: 39.31 + .003 * b µs
+  - Db writes: `Preimages` provider account data
 
   \# \</weight> 
  
@@ -750,8 +740,6 @@ ___
   - Db reads: `ReferendumInfoOf`, `VotingOf`
 
   - Db writes: `ReferendumInfoOf`, `VotingOf`
-
-  - Base Weight: 19.15 + .372 * R
 
   \# \</weight> 
  
@@ -797,8 +785,6 @@ ___
 
   - Db writes: `ReferendumInfoOf`, `VotingOf`
 
-  - Base Weight: 21.03 + .359 * R
-
   \# \</weight> 
  
 ### second(proposal: `Compact<PropIndex>`, seconds_upper_bound: `Compact<u32>`)
@@ -820,10 +806,6 @@ ___
   - Db reads: `DepositOf`
 
   - Db writes: `DepositOf`
-
-  ---------
-
-  - Base Weight: 22.28 + .229 * S µs
 
   \# \</weight> 
  
@@ -851,8 +833,6 @@ ___
 
   - Db writes per votes: `ReferendumInfoOf`
 
-  - Base Weight: 33.29 + 8.104 * R µs
-
   \# \</weight> 
  
 ### unlock(target: `AccountId`)
@@ -872,12 +852,6 @@ ___
   - Db reads: `VotingOf`, `balances locks`, `target account`
 
   - Db writes: `VotingOf`, `balances locks`, `target account`
-
-  - Base Weight:
-
-      - Unlock Remove: 42.96 + .048 * R
-
-      - Unlock Set: 37.63 + .327 * R
 
   \# \</weight> 
  
@@ -901,8 +875,6 @@ ___
 
   - Db writes: `NextExternal`, `Blacklist`
 
-  - Base Weight: 29.87 + .188 * V µs
-
   \# \</weight> 
  
 ### vote(ref_index: `Compact<ReferendumIndex>`, vote: `AccountVote`)
@@ -924,14 +896,6 @@ ___
   - Db reads: `ReferendumInfoOf`, `VotingOf`, `balances locks`
 
   - Db writes: `ReferendumInfoOf`, `VotingOf`, `balances locks`
-
-  --------------------
-
-  - Base Weight:
-
-      - Vote New: 49.24 + .333 * R µs
-
-      - Vote Existing: 49.94 + .343 * R µs
 
   \# \</weight> 
 
@@ -1875,7 +1839,7 @@ ___
 
 ## proxy
  
-### addProxy(proxy: `AccountId`, proxy_type: `ProxyType`)
+### addProxy(delegate: `AccountId`, proxy_type: `ProxyType`, delay: `BlockNumber`)
 - **interface**: `api.tx.proxy.addProxy`
 - **summary**:   Register a proxy account for the sender that is able to make calls on its behalf. 
 
@@ -1889,15 +1853,39 @@ ___
 
   \# \<weight>
 
-   P is the number of proxies the user has 
-
-  - Base weight: 17.48 + .176 * P µs
-
-  - DB weight: 1 storage read and write.
+   Weight is a function of the number of proxies the user has (P). 
 
   \# \</weight> 
  
-### anonymous(proxy_type: `ProxyType`, index: `u16`)
+### announce(real: `AccountId`, call_hash: `CallHashOf`)
+- **interface**: `api.tx.proxy.announce`
+- **summary**:   Publish the hash of a proxy-call that will be made in the future. 
+
+  This must be called some number of blocks before the corresponding `proxy` is attempted if the delay associated with the proxy relationship is greater than zero. 
+
+  No more than `MaxPending` announcements may be made at any one time. 
+
+  This will take a deposit of `AnnouncementDepositFactor` as well as `AnnouncementDepositBase` if there are no other pending announcements. 
+
+  The dispatch origin for this call must be _Signed_ and a proxy of `real`. 
+
+  Parameters: 
+
+  - `real`: The account that the proxy will make a call on behalf of.
+
+  - `call_hash`: The hash of the call to be made by the `real` account.
+
+  \# \<weight>
+
+   Weight is a function of: 
+
+  - A: the number of announcements made.
+
+  - P: the number of proxies the user has.
+
+  \# \</weight> 
+ 
+### anonymous(proxy_type: `ProxyType`, delay: `BlockNumber`, index: `u16`)
 - **interface**: `api.tx.proxy.anonymous`
 - **summary**:   Spawn a fresh new account that is guaranteed to be otherwise inaccessible, and initialize it with a proxy of `proxy_type` for `origin` sender. 
 
@@ -1907,19 +1895,17 @@ ___
 
   - `index`: A disambiguation index, in case this is called multiple times in the sametransaction (e.g. with `utility::batch`). Unless you're using `batch` you probably just want to use `0`. 
 
+  - `delay`: The announcement period required of the initial proxy. Will generally bezero. 
+
   Fails with `Duplicate` if this has already been called in this transaction, from the same sender, with the same parameters. 
 
   Fails if there are insufficient funds to pay for deposit. 
 
   \# \<weight>
 
-   P is the number of proxies the user has 
+   Weight is a function of the number of proxies the user has (P). 
 
-  - Base weight: 36.48 + .039 * P µs
-
-  - DB weight: 1 storage read and write.
-
-  \# \</weight> 
+  \# \</weight> TODO: Might be over counting 1 read 
  
 ### killAnonymous(spawner: `AccountId`, proxy_type: `ProxyType`, index: `u16`, height: `Compact<BlockNumber>`, ext_index: `Compact<u32>`)
 - **interface**: `api.tx.proxy.killAnonymous`
@@ -1943,17 +1929,15 @@ ___
 
   \# \<weight>
 
-   P is the number of proxies the user has 
-
-  - Base weight: 15.65 + .137 * P µs
-
-  - DB weight: 1 storage read and write.
+   Weight is a function of the number of proxies the user has (P). 
 
   \# \</weight> 
  
 ### proxy(real: `AccountId`, force_proxy_type: `Option<ProxyType>`, call: `Call`)
 - **interface**: `api.tx.proxy.proxy`
 - **summary**:   Dispatch the given `call` from an account that the sender is authorised for through `add_proxy`. 
+
+  Removes any corresponding announcement(s). 
 
   The dispatch origin for this call must be _Signed_. 
 
@@ -1967,13 +1951,81 @@ ___
 
   \# \<weight>
 
-   P is the number of proxies the user has 
+   Weight is a function of the number of proxies the user has (P). 
 
-  - Base weight: 19.87 + .141 * P µs
+  \# \</weight> 
+ 
+### proxyAnnounced(delegate: `AccountId`, real: `AccountId`, force_proxy_type: `Option<ProxyType>`, call: `Call`)
+- **interface**: `api.tx.proxy.proxyAnnounced`
+- **summary**:   Dispatch the given `call` from an account that the sender is authorised for through `add_proxy`. 
 
-  - DB weight: 1 storage read.
+  Removes any corresponding announcement(s). 
 
-  - Plus the weight of the `call`
+  The dispatch origin for this call must be _Signed_. 
+
+  Parameters: 
+
+  - `real`: The account that the proxy will make a call on behalf of.
+
+  - `force_proxy_type`: Specify the exact proxy type to be used and checked for this call.
+
+  - `call`: The call to be made by the `real` account.
+
+  \# \<weight>
+
+   Weight is a function of: 
+
+  - A: the number of announcements made.
+
+  - P: the number of proxies the user has.
+
+  \# \</weight> 
+ 
+### rejectAnnouncement(delegate: `AccountId`, call_hash: `CallHashOf`)
+- **interface**: `api.tx.proxy.rejectAnnouncement`
+- **summary**:   Remove the given announcement of a delegate. 
+
+  May be called by a target (proxied) account to remove a call that one of their delegates (`delegate`) has announced they want to execute. The deposit is returned. 
+
+  The dispatch origin for this call must be _Signed_. 
+
+  Parameters: 
+
+  - `delegate`: The account that previously announced the call.
+
+  - `call_hash`: The hash of the call to be made.
+
+  \# \<weight>
+
+   Weight is a function of: 
+
+  - A: the number of announcements made.
+
+  - P: the number of proxies the user has.
+
+  \# \</weight> 
+ 
+### removeAnnouncement(real: `AccountId`, call_hash: `CallHashOf`)
+- **interface**: `api.tx.proxy.removeAnnouncement`
+- **summary**:   Remove a given announcement. 
+
+  May be called by a proxy account to remove a call they previously announced and return the deposit. 
+
+  The dispatch origin for this call must be _Signed_. 
+
+  Parameters: 
+
+  - `real`: The account that the proxy will make a call on behalf of.
+
+  - `call_hash`: The hash of the call to be made by the `real` account.
+
+  \# \<weight>
+
+   Weight is a function of: 
+
+  - A: the number of announcements made.
+
+  - P: the number of proxies the user has.
 
   \# \</weight> 
  
@@ -1987,15 +2039,11 @@ ___
 
   \# \<weight>
 
-   P is the number of proxies the user has 
-
-  - Base weight: 13.73 + .129 * P µs
-
-  - DB weight: 1 storage read and write.
+   Weight is a function of the number of proxies the user has (P). 
 
   \# \</weight> 
  
-### removeProxy(proxy: `AccountId`, proxy_type: `ProxyType`)
+### removeProxy(delegate: `AccountId`, proxy_type: `ProxyType`, delay: `BlockNumber`)
 - **interface**: `api.tx.proxy.removeProxy`
 - **summary**:   Unregister a proxy account for the sender. 
 
@@ -2009,11 +2057,7 @@ ___
 
   \# \<weight>
 
-   P is the number of proxies the user has 
-
-  - Base weight: 14.37 + .164 * P µs
-
-  - DB weight: 1 storage read and write.
+   Weight is a function of the number of proxies the user has (P). 
 
   \# \</weight> 
 
@@ -3729,7 +3773,7 @@ ___
 
   \# \<weight>
 
-   Complexity: O(P) where P is the number of max proposals Base Weight: .49 * P DB Weight: 
+   Complexity: O(P) where P is the number of max proposals DB Weight: 
 
   * Reads: Proposals
 
@@ -3815,7 +3859,7 @@ ___
 
   Requires root origin. 
 
-  NOTE: Does not enforce the expected `MAX_MEMBERS` limit on the amount of members, but       the weight estimations rely on it to estimate dispatchable weight. 
+  NOTE: Does not enforce the expected `MaxMembers` limit on the amount of members, but       the weight estimations rely on it to estimate dispatchable weight. 
 
   \# \<weight>
 
@@ -3938,10 +3982,6 @@ ___
   - 1 storage read and 1 storage mutation (codec `O(1)`). (because of `DidUpdate::take` in `on_finalize`)
 
   - 1 event handler `on_timestamp_set` `O(T)`.
-
-  - Benchmark: 7.678 (min squares analysis)
-
-    - NOTE: This benchmark was done for a runtime with insignificant `on_timestamp_set` handlers.    New benchmarking is needed when adding new handlers. 
 
   \# \</weight> 
 
@@ -4150,16 +4190,6 @@ ___
   NOTE: Prior to version *12, this was called `as_limited_sub`. 
 
   The dispatch origin for this call must be _Signed_. 
-
-  \# \<weight>
-
-   
-
-  - Base weight: 2.861 µs
-
-  - Plus the weight of the `call`
-
-  \# \</weight> 
  
 ### batch(calls: `Vec<Call>`)
 - **interface**: `api.tx.utility.batch`

@@ -109,8 +109,20 @@ ___
 
 ## contracts
  
-### InsufficientBalance
-- **summary**:   Performing the requested transfer would have brought the contract below the subsistence threshold. No transfer is allowed to do this in order to allow for a tombstone to be created. Use `ext_terminate` to remove a contract without leaving a tombstone behind. 
+### BelowSubsistenceThreshold
+- **summary**:   Performing the requested transfer would have brought the contract below the subsistence threshold. No transfer is allowed to do this in order to allow for a tombstone to be created. Use `seal_terminate` to remove a contract without leaving a tombstone behind. 
+ 
+### CodeNotFound
+- **summary**:   No code could be found at the supplied code hash. 
+ 
+### CodeTooLarge
+- **summary**:   The code supplied to `put_code` exceeds the limit specified in the current schedule. 
+ 
+### ContractTrapped
+- **summary**:   Contract trapped during execution. 
+ 
+### DecodingFailed
+- **summary**:   Input passed to a contract API function failed to decode as expected type. 
  
 ### InvalidContractOrigin
 - **summary**:   An origin TrieId written in the current block. 
@@ -130,11 +142,26 @@ ___
 ### InvalidTombstone
 - **summary**:   Tombstones don't match. 
  
+### MaxCallDepthReached
+- **summary**:   Performing a call was denied because the calling depth reached the limit of what is specified in the schedule. 
+ 
+### NewContractNotFunded
+- **summary**:   The newly created contract is below the subsistence threshold after executing its contructor. No contracts are allowed to exist below that threshold. 
+ 
+### NotCallable
+- **summary**:   The contract that was called is either no contract at all (a plain account) or is a tombstone. 
+ 
+### OutOfBounds
+- **summary**:   A buffer outside of sandbox memory was passed to a contract API function. 
+ 
 ### OutOfGas
 - **summary**:   The executed contract exhausted its gas limit. 
  
 ### OutputBufferTooSmall
 - **summary**:   The output buffer supplied to a contract API call was too small. 
+ 
+### TransferFailed
+- **summary**:   Performing the requested transfer failed for a reason originating in the chosen currency implementation of the runtime. Most probably the balance is too low or locks are placed on it. 
 
 ___
 
@@ -497,7 +524,10 @@ ___
 - **summary**:   Sender is not a proxy of the account to be proxied. 
  
 ### TooMany
-- **summary**:   There are too many proxies registered. 
+- **summary**:   There are too many proxies registered or too many announcements pending. 
+ 
+### Unannounced
+- **summary**:   Announcement, if made at all, was made too recently. 
  
 ### Unproxyable
 - **summary**:   A call which is incompatible with the proxy type's filter was attempted. 
@@ -704,40 +734,40 @@ ___
 ### NoUnlockChunk
 - **summary**:   Can not rebond without unlocking chunks. 
  
-### PhragmenBogusCompact
+### OffchainElectionBogusCompact
 - **summary**:   Error while building the assignment type from the compact. This can happen if an index is invalid, or if the weights _overflow_. 
  
-### PhragmenBogusEdge
+### OffchainElectionBogusEdge
 - **summary**:   The submitted result has unknown edges that are not among the presented winners. 
  
-### PhragmenBogusElectionSize
+### OffchainElectionBogusElectionSize
 - **summary**:   The election size is invalid. 
  
-### PhragmenBogusNomination
+### OffchainElectionBogusNomination
 - **summary**:   One of the submitted nominators has an edge to which they have not voted on chain. 
  
-### PhragmenBogusNominator
+### OffchainElectionBogusNominator
 - **summary**:   One of the submitted nominators is not an active nominator on chain. 
  
-### PhragmenBogusScore
+### OffchainElectionBogusScore
 - **summary**:   The claimed score does not match with the one computed from the data. 
  
-### PhragmenBogusSelfVote
+### OffchainElectionBogusSelfVote
 - **summary**:   A self vote must only be originated from a validator to ONLY themselves. 
  
-### PhragmenBogusWinner
+### OffchainElectionBogusWinner
 - **summary**:   One of the submitted winners is not an active candidate on chain (index is out of range in snapshot). 
  
-### PhragmenBogusWinnerCount
+### OffchainElectionBogusWinnerCount
 - **summary**:   Incorrect number of winners were presented. 
  
-### PhragmenEarlySubmission
+### OffchainElectionEarlySubmission
 - **summary**:   The submitted result is received out of the open window. 
  
-### PhragmenSlashedNomination
+### OffchainElectionSlashedNomination
 - **summary**:   One of the submitted nominators has an edge which is submitted before the last non-zero slash of the target. 
  
-### PhragmenWeakSubmission
+### OffchainElectionWeakSubmission
 - **summary**:   The submitted result is not as good as the one stored on chain. 
  
 ### SnapshotUnavailable

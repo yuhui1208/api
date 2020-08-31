@@ -456,7 +456,11 @@ ___
 
 ## proxy
  
-### proxies(`AccountId`): `(Vec<(AccountId,ProxyType)>,BalanceOf)`
+### announcements(`AccountId`): `(Vec<Announcement>,BalanceOf)`
+- **interface**: `api.query.proxy.announcements`
+- **summary**:   The announcements made by the proxy (key). 
+ 
+### proxies(`AccountId`): `(Vec<ProxyDefinition>,BalanceOf)`
 - **interface**: `api.query.proxy.proxies`
 - **summary**:   The set of account proxies. Maps the account which has delegated to the accounts which are being delegated to, together with the amount held on deposit. 
 

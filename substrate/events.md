@@ -180,10 +180,10 @@ ___
 - **summary**:   A proposal's preimage was noted, and the deposit taken. [proposal_hash, who, deposit] 
  
 ### PreimageReaped(`Hash`, `AccountId`, `Balance`, `AccountId`)
-- **summary**:   A registered preimage was removed and the deposit collected by the reaper.  [proposal_hash, provider, deposit, reaper] 
+- **summary**:   A registered preimage was removed and the deposit collected by the reaper. [proposal_hash, provider, deposit, reaper] 
  
 ### PreimageUsed(`Hash`, `AccountId`, `Balance`)
-- **summary**:   A proposal preimage was removed and used (the deposit was returned).  [proposal_hash, provider, deposit] 
+- **summary**:   A proposal preimage was removed and used (the deposit was returned). [proposal_hash, provider, deposit] 
  
 ### Proposed(`PropIndex`, `Balance`)
 - **summary**:   A motion has been proposed by a public account. [proposal_index, deposit] 
@@ -330,6 +330,9 @@ ___
 
 ## proxy
  
+### Announced(`AccountId`, `AccountId`, `Hash`)
+- **summary**:   An announcement was placed to make a call in the future. [real, proxy, call_hash] 
+ 
 ### AnonymousCreated(`AccountId`, `AccountId`, `ProxyType`, `u16`)
 - **summary**:   Anonymous account has been created by new proxy with given disambiguation index and proxy type. [anonymous, who, proxy_type, disambiguation_index] 
  
@@ -445,7 +448,7 @@ ___
   NOTE: This event is only emitted when funds are bonded via a dispatchable. Notably, it will not be emitted for staking rewards when they are added to stake. 
  
 ### EraPayout(`EraIndex`, `Balance`, `Balance`)
-- **summary**:   The era payout has been set; the first balance is the validator-payout; the second is the remainder from the maximum amount of reward.  [era_index, validator_payout, remainder] 
+- **summary**:   The era payout has been set; the first balance is the validator-payout; the second is the remainder from the maximum amount of reward. [era_index, validator_payout, remainder] 
  
 ### OldSlashingReportDiscarded(`SessionIndex`)
 - **summary**:   An old slashing report from a prior era was discarded because it could not be processed. [session_index] 
@@ -454,7 +457,7 @@ ___
 - **summary**:   The staker has been rewarded by this amount. [stash, amount] 
  
 ### Slash(`AccountId`, `Balance`)
-- **summary**:   One validator (and its nominators) has been slashed by the given amount.  [validator, amount] 
+- **summary**:   One validator (and its nominators) has been slashed by the given amount. [validator, amount] 
  
 ### SolutionStored(`ElectionCompute`)
 - **summary**:   A new solution for the upcoming election has been stored. [compute] 
