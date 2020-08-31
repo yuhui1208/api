@@ -22,4 +22,4 @@
 
 Ƭ **CombinatorCallback**: *Callback‹T›*
 
-*Defined in [packages/api/src/promise/Combinator.ts:10](https://github.com/polkadot-js/api/blob/533f9ce249/packages/api/src/promise/Combinator.ts#L10)*
+*Defined in [packages/api/src/promise/Combinator.ts:10](https://github.com/polkadot-js/api/blob/cab338e26d/packages/api/src/promise/Combinator.ts#L10)*

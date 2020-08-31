@@ -14,7 +14,7 @@
 
 ▸ **getHeader**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/chain/getHeader.ts:27](https://github.com/polkadot-js/api/blob/533f9ce249/packages/api-derive/src/chain/getHeader.ts#L27)*
+*Defined in [packages/api-derive/src/chain/getHeader.ts:27](https://github.com/polkadot-js/api/blob/cab338e26d/packages/api-derive/src/chain/getHeader.ts#L27)*
 
 **`name`** getHeader
 
