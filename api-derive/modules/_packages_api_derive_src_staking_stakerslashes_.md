@@ -15,7 +15,7 @@
 
 ▸ **_stakerSlashes**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stakerSlashes.ts:14](https://github.com/polkadot-js/api/blob/6e6fa4a97c/packages/api-derive/src/staking/stakerSlashes.ts#L14)*
+*Defined in [packages/api-derive/src/staking/stakerSlashes.ts:14](https://github.com/polkadot-js/api/blob/5e8ae793c3/packages/api-derive/src/staking/stakerSlashes.ts#L14)*
 
 **Parameters:**
 
@@ -41,7 +41,7 @@ ___
 
 ▸ **stakerSlashes**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stakerSlashes.ts:29](https://github.com/polkadot-js/api/blob/6e6fa4a97c/packages/api-derive/src/staking/stakerSlashes.ts#L29)*
+*Defined in [packages/api-derive/src/staking/stakerSlashes.ts:29](https://github.com/polkadot-js/api/blob/5e8ae793c3/packages/api-derive/src/staking/stakerSlashes.ts#L29)*
 
 **Parameters:**
 

@@ -22,7 +22,7 @@
 
 ▸ **signAndSend**(`account`: IKeyringPair | string | AccountId | Address): *CodePutCodeResultSubscription‹ApiType›*
 
-*Defined in [packages/api-contract/src/base/Code.ts:23](https://github.com/polkadot-js/api/blob/6e6fa4a97c/packages/api-contract/src/base/Code.ts#L23)*
+*Defined in [packages/api-contract/src/base/Code.ts:23](https://github.com/polkadot-js/api/blob/5e8ae793c3/packages/api-contract/src/base/Code.ts#L23)*
 
 **Parameters:**
 
