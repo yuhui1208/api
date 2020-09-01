@@ -16,6 +16,7 @@
 * ["packages/metadata/src/Metadata/Metadata"](modules/_packages_metadata_src_metadata_metadata_.md)
 * ["packages/metadata/src/Metadata/MetadataVersioned"](modules/_packages_metadata_src_metadata_metadataversioned_.md)
 * ["packages/metadata/src/Metadata/static"](modules/_packages_metadata_src_metadata_static_.md)
+* ["packages/metadata/src/Metadata/util/extractTypes"](modules/_packages_metadata_src_metadata_util_extracttypes_.md)
 * ["packages/metadata/src/Metadata/util/flattenUniq"](modules/_packages_metadata_src_metadata_util_flattenuniq_.md)
 * ["packages/metadata/src/Metadata/util/getUniqTypes"](modules/_packages_metadata_src_metadata_util_getuniqtypes_.md)
 * ["packages/metadata/src/Metadata/util/testUtil"](modules/_packages_metadata_src_metadata_util_testutil_.md)

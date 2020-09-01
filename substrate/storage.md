@@ -456,7 +456,7 @@ ___
 
 ## proxy
  
-### announcements(`AccountId`): `(Vec<Announcement>,BalanceOf)`
+### announcements(`AccountId`): `(Vec<ProxyAnnouncement>,BalanceOf)`
 - **interface**: `api.query.proxy.announcements`
 - **summary**:   The announcements made by the proxy (key). 
  
