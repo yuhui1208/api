@@ -191,6 +191,11 @@ ___
 - **interface**: `api.rpc.grandpa.roundState`
 - **jsonrpc**: `grandpa_roundState`
 - **summary**: Returns the state of the current best round state as well as the ongoing background rounds
+ 
+### subscribeJustifications(): `JustificationNotification`
+- **interface**: `api.rpc.grandpa.subscribeJustifications`
+- **jsonrpc**: `grandpa_subscribeJustifications`
+- **summary**: Subscribes to grandpa justifications
 
 ___
 
