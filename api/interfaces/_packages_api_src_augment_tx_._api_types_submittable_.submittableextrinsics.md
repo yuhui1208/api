@@ -16,7 +16,7 @@
 
 ▸ (`extrinsic`: Call | Extrinsic | Uint8Array | string): *SubmittableExtrinsic‹ApiType›*
 
-*Defined in [packages/api/src/augment/tx.ts:3418](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L3418)*
+*Defined in [packages/api/src/augment/tx.ts:3418](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L3418)*
 
 **Parameters:**
 
@@ -28,7 +28,7 @@ Name | Type |
 
 ## Indexable
 
-* \[ **index**: *string*\]: [SubmittableModuleExtrinsics](_packages_api_src_types_submittable_.submittablemoduleextrinsics.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableModuleExtrinsics](_packages_api_src_types_submittable_.submittablemoduleextrinsics.md)‹ApiType›
 
 ## Index
 
@@ -70,11 +70,11 @@ Name | Type |
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[authorship](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#authorship)*
 
-*Defined in [packages/api/src/augment/tx.ts:29](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L29)*
+*Defined in [packages/api/src/augment/tx.ts:29](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L29)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **setUncles**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -86,11 +86,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[babe](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#babe)*
 
-*Defined in [packages/api/src/augment/tx.ts:36](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L36)*
+*Defined in [packages/api/src/augment/tx.ts:36](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L36)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **reportEquivocation**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -104,11 +104,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[balances](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#balances)*
 
-*Defined in [packages/api/src/augment/tx.ts:57](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L57)*
+*Defined in [packages/api/src/augment/tx.ts:57](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L57)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **forceTransfer**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -126,11 +126,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[contracts](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#contracts)*
 
-*Defined in [packages/api/src/augment/tx.ts:134](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L134)*
+*Defined in [packages/api/src/augment/tx.ts:134](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L134)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **call**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -150,11 +150,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[council](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#council)*
 
-*Defined in [packages/api/src/augment/tx.ts:179](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L179)*
+*Defined in [packages/api/src/augment/tx.ts:179](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L179)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **close**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -176,11 +176,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[democracy](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#democracy)*
 
-*Defined in [packages/api/src/augment/tx.ts:313](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L313)*
+*Defined in [packages/api/src/augment/tx.ts:313](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L313)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **cancelQueued**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -236,11 +236,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[elections](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#elections)*
 
-*Defined in [packages/api/src/augment/tx.ts:701](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L701)*
+*Defined in [packages/api/src/augment/tx.ts:701](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L701)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **removeMember**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -262,11 +262,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[finalityTracker](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#finalitytracker)*
 
-*Defined in [packages/api/src/augment/tx.ts:864](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L864)*
+*Defined in [packages/api/src/augment/tx.ts:864](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L864)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **finalHint**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -278,11 +278,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[grandpa](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#grandpa)*
 
-*Defined in [packages/api/src/augment/tx.ts:872](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L872)*
+*Defined in [packages/api/src/augment/tx.ts:872](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L872)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **noteStalled**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -298,11 +298,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[identity](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#identity)*
 
-*Defined in [packages/api/src/augment/tx.ts:904](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L904)*
+*Defined in [packages/api/src/augment/tx.ts:904](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L904)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **addRegistrar**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -342,11 +342,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[imOnline](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#imonline)*
 
-*Defined in [packages/api/src/augment/tx.ts:1168](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L1168)*
+*Defined in [packages/api/src/augment/tx.ts:1168](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L1168)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **heartbeat**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -358,11 +358,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[indices](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#indices)*
 
-*Defined in [packages/api/src/augment/tx.ts:1184](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L1184)*
+*Defined in [packages/api/src/augment/tx.ts:1184](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L1184)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **claim**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -382,11 +382,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[multisig](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#multisig)*
 
-*Defined in [packages/api/src/augment/tx.ts:1301](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L1301)*
+*Defined in [packages/api/src/augment/tx.ts:1301](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L1301)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **approveAsMulti**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -404,11 +404,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[proxy](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#proxy)*
 
-*Defined in [packages/api/src/augment/tx.ts:1450](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L1450)*
+*Defined in [packages/api/src/augment/tx.ts:1450](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L1450)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **addProxy**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -438,11 +438,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[recovery](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#recovery)*
 
-*Defined in [packages/api/src/augment/tx.ts:1643](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L1643)*
+*Defined in [packages/api/src/augment/tx.ts:1643](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L1643)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **asRecovered**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -470,11 +470,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[scheduler](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#scheduler)*
 
-*Defined in [packages/api/src/augment/tx.ts:1845](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L1845)*
+*Defined in [packages/api/src/augment/tx.ts:1845](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L1845)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **cancel**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -496,11 +496,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[session](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#session)*
 
-*Defined in [packages/api/src/augment/tx.ts:1916](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L1916)*
+*Defined in [packages/api/src/augment/tx.ts:1916](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L1916)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **purgeKeys**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -514,11 +514,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[society](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#society)*
 
-*Defined in [packages/api/src/augment/tx.ts:1951](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L1951)*
+*Defined in [packages/api/src/augment/tx.ts:1951](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L1951)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **bid**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -552,11 +552,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[staking](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#staking)*
 
-*Defined in [packages/api/src/augment/tx.ts:2271](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L2271)*
+*Defined in [packages/api/src/augment/tx.ts:2271](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L2271)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **bond**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -614,11 +614,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[sudo](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#sudo)*
 
-*Defined in [packages/api/src/augment/tx.ts:2755](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L2755)*
+*Defined in [packages/api/src/augment/tx.ts:2755](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L2755)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **setKey**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -636,11 +636,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[system](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#system)*
 
-*Defined in [packages/api/src/augment/tx.ts:2810](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L2810)*
+*Defined in [packages/api/src/augment/tx.ts:2810](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L2810)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **fillBlock**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -670,11 +670,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[technicalCommittee](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#technicalcommittee)*
 
-*Defined in [packages/api/src/augment/tx.ts:2924](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L2924)*
+*Defined in [packages/api/src/augment/tx.ts:2924](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L2924)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **close**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -696,11 +696,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[technicalMembership](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#technicalmembership)*
 
-*Defined in [packages/api/src/augment/tx.ts:3058](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L3058)*
+*Defined in [packages/api/src/augment/tx.ts:3058](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L3058)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **addMember**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -724,11 +724,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[timestamp](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#timestamp)*
 
-*Defined in [packages/api/src/augment/tx.ts:3108](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L3108)*
+*Defined in [packages/api/src/augment/tx.ts:3108](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L3108)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **set**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -740,11 +740,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[treasury](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#treasury)*
 
-*Defined in [packages/api/src/augment/tx.ts:3129](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L3129)*
+*Defined in [packages/api/src/augment/tx.ts:3129](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L3129)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **approveProposal**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -770,11 +770,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[utility](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#utility)*
 
-*Defined in [packages/api/src/augment/tx.ts:3286](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L3286)*
+*Defined in [packages/api/src/augment/tx.ts:3286](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L3286)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **asDerivative**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 
@@ -788,11 +788,11 @@ ___
 
 *Inherited from [AugmentedSubmittables](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md).[vesting](_packages_api_src_augment_tx_._api_types_submittable_.augmentedsubmittables.md#vesting)*
 
-*Defined in [packages/api/src/augment/tx.ts:3328](https://github.com/polkadot-js/api/blob/df229ffb8a/packages/api/src/augment/tx.ts#L3328)*
+*Defined in [packages/api/src/augment/tx.ts:3328](https://github.com/polkadot-js/api/blob/eb6b3c5bd4/packages/api/src/augment/tx.ts#L3328)*
 
 #### Type declaration:
 
-* \[ **index**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
+* \[ **key**: *string*\]: [SubmittableExtrinsicFunction](_packages_api_src_types_submittable_.submittableextrinsicfunction.md)‹ApiType›
 
 * **forceVestedTransfer**: *[AugmentedSubmittable](../modules/_packages_api_src_types_submittable_.md#augmentedsubmittable)‹function›*
 

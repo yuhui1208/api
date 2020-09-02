@@ -6,4 +6,4 @@
 
 ### Modules
 
-* ["metadata/Decorated/consts/types"](_packages_api_src_augment_consts_._metadata_decorated_consts_types_.md)
+* ["api/types/consts"](_packages_api_src_augment_consts_._api_types_consts_.md)

@@ -21,6 +21,7 @@
 * ["packages/api/src/submittable/createClass"](modules/_packages_api_src_submittable_createclass_.md)
 * ["packages/api/src/submittable/createSubmittable"](modules/_packages_api_src_submittable_createsubmittable_.md)
 * ["packages/api/src/types/base"](modules/_packages_api_src_types_base_.md)
+* ["packages/api/src/types/consts"](modules/_packages_api_src_types_consts_.md)
 * ["packages/api/src/types/rpc"](modules/_packages_api_src_types_rpc_.md)
 * ["packages/api/src/types/storage"](modules/_packages_api_src_types_storage_.md)
 * ["packages/api/src/types/submittable"](modules/_packages_api_src_types_submittable_.md)
