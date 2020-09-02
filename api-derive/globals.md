@@ -6,6 +6,7 @@
 
 ### Modules
 
+* ["packages/api-derive/src/accounts/accountId"](modules/_packages_api_derive_src_accounts_accountid_.md)
 * ["packages/api-derive/src/accounts/flags"](modules/_packages_api_derive_src_accounts_flags_.md)
 * ["packages/api-derive/src/accounts/idAndIndex"](modules/_packages_api_derive_src_accounts_idandindex_.md)
 * ["packages/api-derive/src/accounts/idToIndex"](modules/_packages_api_derive_src_accounts_idtoindex_.md)
