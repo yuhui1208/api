@@ -13,14 +13,15 @@
 
 ###  nextElected
 
-▸ **nextElected**(`api`: ApiInterfaceRx): *function*
+▸ **nextElected**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/validators.ts:14](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/validators.ts#L14)*
+*Defined in [packages/api-derive/src/staking/validators.ts:14](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/validators.ts#L14)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*
@@ -31,9 +32,9 @@ ___
 
 ###  validators
 
-▸ **validators**(`api`: ApiInterfaceRx): *function*
+▸ **validators**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/validators.ts:30](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/validators.ts#L30)*
+*Defined in [packages/api-derive/src/staking/validators.ts:30](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/validators.ts#L30)*
 
 **`description`** Retrieve latest list of validators
 
@@ -41,6 +42,7 @@ ___
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*

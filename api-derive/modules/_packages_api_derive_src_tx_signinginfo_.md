@@ -12,14 +12,15 @@
 
 ###  signingInfo
 
-▸ **signingInfo**(`api`: ApiInterfaceRx): *function*
+▸ **signingInfo**(`_instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/tx/signingInfo.ts:43](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/tx/signingInfo.ts#L43)*
+*Defined in [packages/api-derive/src/tx/signingInfo.ts:43](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/tx/signingInfo.ts#L43)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`_instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*

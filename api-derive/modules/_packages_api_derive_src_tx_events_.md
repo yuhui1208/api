@@ -12,14 +12,15 @@
 
 ###  events
 
-▸ **events**(`api`: ApiInterfaceRx): *function*
+▸ **events**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/tx/events.ts:18](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/tx/events.ts#L18)*
+*Defined in [packages/api-derive/src/tx/events.ts:18](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/tx/events.ts#L18)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*

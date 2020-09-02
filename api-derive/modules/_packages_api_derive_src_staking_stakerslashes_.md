@@ -13,14 +13,15 @@
 
 ###  _stakerSlashes
 
-▸ **_stakerSlashes**(`api`: ApiInterfaceRx): *function*
+▸ **_stakerSlashes**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stakerSlashes.ts:14](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/stakerSlashes.ts#L14)*
+*Defined in [packages/api-derive/src/staking/stakerSlashes.ts:14](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/stakerSlashes.ts#L14)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*
@@ -39,14 +40,15 @@ ___
 
 ###  stakerSlashes
 
-▸ **stakerSlashes**(`api`: ApiInterfaceRx): *function*
+▸ **stakerSlashes**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stakerSlashes.ts:29](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/stakerSlashes.ts#L29)*
+*Defined in [packages/api-derive/src/staking/stakerSlashes.ts:29](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/stakerSlashes.ts#L29)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*

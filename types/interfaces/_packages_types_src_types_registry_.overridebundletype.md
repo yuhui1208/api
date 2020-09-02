@@ -19,7 +19,7 @@
 
 • **chain**? : *Record‹string, [OverrideBundleDefinition](_packages_types_src_types_registry_.overridebundledefinition.md)›*
 
-*Defined in [packages/types/src/types/registry.ts:40](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/types/src/types/registry.ts#L40)*
+*Defined in [packages/types/src/types/registry.ts:40](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/types/src/types/registry.ts#L40)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **spec**? : *Record‹string, [OverrideBundleDefinition](_packages_types_src_types_registry_.overridebundledefinition.md)›*
 
-*Defined in [packages/types/src/types/registry.ts:41](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/types/src/types/registry.ts#L41)*
+*Defined in [packages/types/src/types/registry.ts:41](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/types/src/types/registry.ts#L41)*

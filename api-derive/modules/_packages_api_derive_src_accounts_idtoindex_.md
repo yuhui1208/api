@@ -12,9 +12,9 @@
 
 ###  idToIndex
 
-▸ **idToIndex**(`api`: ApiInterfaceRx): *function*
+▸ **idToIndex**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/accounts/idToIndex.ts:28](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/accounts/idToIndex.ts#L28)*
+*Defined in [packages/api-derive/src/accounts/idToIndex.ts:28](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/accounts/idToIndex.ts#L28)*
 
 **`name`** idToIndex
 
@@ -32,6 +32,7 @@ api.derive.accounts.idToIndex(ALICE, (accountIndex) => {
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*

@@ -15,14 +15,15 @@
 
 ###  _eraSlashes
 
-▸ **_eraSlashes**(`api`: ApiInterfaceRx): *function*
+▸ **_eraSlashes**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasSlashes.ts:33](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/erasSlashes.ts#L33)*
+*Defined in [packages/api-derive/src/staking/erasSlashes.ts:33](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/erasSlashes.ts#L33)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*
@@ -40,14 +41,15 @@ ___
 
 ###  _erasSlashes
 
-▸ **_erasSlashes**(`api`: ApiInterfaceRx): *function*
+▸ **_erasSlashes**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasSlashes.ts:63](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/erasSlashes.ts#L63)*
+*Defined in [packages/api-derive/src/staking/erasSlashes.ts:63](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/erasSlashes.ts#L63)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*
@@ -65,14 +67,15 @@ ___
 
 ###  eraSlashes
 
-▸ **eraSlashes**(`api`: ApiInterfaceRx): *function*
+▸ **eraSlashes**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasSlashes.ts:57](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/erasSlashes.ts#L57)*
+*Defined in [packages/api-derive/src/staking/erasSlashes.ts:57](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/erasSlashes.ts#L57)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*
@@ -89,14 +92,15 @@ ___
 
 ###  erasSlashes
 
-▸ **erasSlashes**(`api`: ApiInterfaceRx): *function*
+▸ **erasSlashes**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasSlashes.ts:73](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/erasSlashes.ts#L73)*
+*Defined in [packages/api-derive/src/staking/erasSlashes.ts:73](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/erasSlashes.ts#L73)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*

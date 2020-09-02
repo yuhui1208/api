@@ -15,14 +15,15 @@
 
 ###  _ownSlash
 
-▸ **_ownSlash**(`api`: ApiInterfaceRx): *function*
+▸ **_ownSlash**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/ownSlashes.ts:18](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/ownSlashes.ts#L18)*
+*Defined in [packages/api-derive/src/staking/ownSlashes.ts:18](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/ownSlashes.ts#L18)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*
@@ -41,14 +42,15 @@ ___
 
 ###  _ownSlashes
 
-▸ **_ownSlashes**(`api`: ApiInterfaceRx): *function*
+▸ **_ownSlashes**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/ownSlashes.ts:53](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/ownSlashes.ts#L53)*
+*Defined in [packages/api-derive/src/staking/ownSlashes.ts:53](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/ownSlashes.ts#L53)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*
@@ -67,14 +69,15 @@ ___
 
 ###  ownSlash
 
-▸ **ownSlash**(`api`: ApiInterfaceRx): *function*
+▸ **ownSlash**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/ownSlashes.ts:47](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/ownSlashes.ts#L47)*
+*Defined in [packages/api-derive/src/staking/ownSlashes.ts:47](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/ownSlashes.ts#L47)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*
@@ -92,14 +95,15 @@ ___
 
 ###  ownSlashes
 
-▸ **ownSlashes**(`api`: ApiInterfaceRx): *function*
+▸ **ownSlashes**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/ownSlashes.ts:63](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/ownSlashes.ts#L63)*
+*Defined in [packages/api-derive/src/staking/ownSlashes.ts:63](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/ownSlashes.ts#L63)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*

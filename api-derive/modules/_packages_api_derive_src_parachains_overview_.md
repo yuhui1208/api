@@ -12,14 +12,15 @@
 
 ###  overview
 
-▸ **overview**(`api`: ApiInterfaceRx): *function*
+▸ **overview**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/parachains/overview.ts:37](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/parachains/overview.ts#L37)*
+*Defined in [packages/api-derive/src/parachains/overview.ts:37](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/parachains/overview.ts#L37)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*

@@ -12,9 +12,9 @@
 
 ###  bestNumberLag
 
-▸ **bestNumberLag**(`api`: ApiInterfaceRx): *function*
+▸ **bestNumberLag**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/chain/bestNumberLag.ts:26](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/chain/bestNumberLag.ts#L26)*
+*Defined in [packages/api-derive/src/chain/bestNumberLag.ts:26](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/chain/bestNumberLag.ts#L26)*
 
 **`name`** bestNumberLag
 
@@ -33,6 +33,7 @@ api.derive.chain.bestNumberLag((lag) => {
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*

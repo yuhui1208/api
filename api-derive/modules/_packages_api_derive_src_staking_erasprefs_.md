@@ -15,14 +15,15 @@
 
 ###  _eraPrefs
 
-▸ **_eraPrefs**(`api`: ApiInterfaceRx): *function*
+▸ **_eraPrefs**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasPrefs.ts:27](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/erasPrefs.ts#L27)*
+*Defined in [packages/api-derive/src/staking/erasPrefs.ts:27](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/erasPrefs.ts#L27)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*
@@ -40,14 +41,15 @@ ___
 
 ###  _erasPrefs
 
-▸ **_erasPrefs**(`api`: ApiInterfaceRx): *function*
+▸ **_erasPrefs**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasPrefs.ts:54](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/erasPrefs.ts#L54)*
+*Defined in [packages/api-derive/src/staking/erasPrefs.ts:54](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/erasPrefs.ts#L54)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*
@@ -65,14 +67,15 @@ ___
 
 ###  eraPrefs
 
-▸ **eraPrefs**(`api`: ApiInterfaceRx): *function*
+▸ **eraPrefs**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasPrefs.ts:48](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/erasPrefs.ts#L48)*
+*Defined in [packages/api-derive/src/staking/erasPrefs.ts:48](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/erasPrefs.ts#L48)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*
@@ -89,14 +92,15 @@ ___
 
 ###  erasPrefs
 
-▸ **erasPrefs**(`api`: ApiInterfaceRx): *function*
+▸ **erasPrefs**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasPrefs.ts:62](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/erasPrefs.ts#L62)*
+*Defined in [packages/api-derive/src/staking/erasPrefs.ts:62](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/erasPrefs.ts#L62)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*

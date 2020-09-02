@@ -12,9 +12,9 @@
 
 ###  bestNumberFinalized
 
-▸ **bestNumberFinalized**(`api`: ApiInterfaceRx): *function*
+▸ **bestNumberFinalized**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/chain/bestNumberFinalized.ts:26](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/chain/bestNumberFinalized.ts#L26)*
+*Defined in [packages/api-derive/src/chain/bestNumberFinalized.ts:26](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/chain/bestNumberFinalized.ts#L26)*
 
 **`name`** bestNumberFinalized
 
@@ -33,6 +33,7 @@ api.derive.chain.bestNumberFinalized((blockNumber) => {
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*

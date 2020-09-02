@@ -12,9 +12,9 @@
 
 ###  all
 
-▸ **all**(`api`: ApiInterfaceRx): *function*
+▸ **all**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/balances/all.ts:131](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/balances/all.ts#L131)*
+*Defined in [packages/api-derive/src/balances/all.ts:131](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/balances/all.ts#L131)*
 
 **`name`** all
 
@@ -33,6 +33,7 @@ api.derive.balances.all(ALICE, ({ accountId, lockedBalance }) => {
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*

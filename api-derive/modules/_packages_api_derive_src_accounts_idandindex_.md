@@ -12,9 +12,9 @@
 
 ###  idAndIndex
 
-▸ **idAndIndex**(`api`: ApiInterfaceRx): *function*
+▸ **idAndIndex**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/accounts/idAndIndex.ts:54](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/accounts/idAndIndex.ts#L54)*
+*Defined in [packages/api-derive/src/accounts/idAndIndex.ts:54](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/accounts/idAndIndex.ts#L54)*
 
 **`name`** idAndIndex
 
@@ -33,6 +33,7 @@ api.derive.accounts.idAndIndex('F7Hs', ([id, ix]) => {
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*

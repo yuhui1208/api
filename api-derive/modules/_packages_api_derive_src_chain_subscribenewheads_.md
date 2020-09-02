@@ -12,9 +12,9 @@
 
 ###  subscribeNewHeads
 
-▸ **subscribeNewHeads**(`api`: ApiInterfaceRx): *function*
+▸ **subscribeNewHeads**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/chain/subscribeNewHeads.ts:26](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/chain/subscribeNewHeads.ts#L26)*
+*Defined in [packages/api-derive/src/chain/subscribeNewHeads.ts:26](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/chain/subscribeNewHeads.ts#L26)*
 
 **`name`** subscribeNewHeads
 
@@ -33,6 +33,7 @@ api.derive.chain.subscribeNewHeads((header) => {
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*

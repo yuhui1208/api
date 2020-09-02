@@ -12,14 +12,15 @@
 
 ###  indexes
 
-▸ **indexes**(`api`: ApiInterfaceRx): *function*
+▸ **indexes**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/session/indexes.ts:79](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/session/indexes.ts#L79)*
+*Defined in [packages/api-derive/src/session/indexes.ts:79](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/session/indexes.ts#L79)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*

@@ -13,14 +13,15 @@
 
 ###  _stakerExposure
 
-▸ **_stakerExposure**(`api`: ApiInterfaceRx): *function*
+▸ **_stakerExposure**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stakerExposure.ts:14](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/stakerExposure.ts#L14)*
+*Defined in [packages/api-derive/src/staking/stakerExposure.ts:14](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/stakerExposure.ts#L14)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*
@@ -39,14 +40,15 @@ ___
 
 ###  stakerExposure
 
-▸ **stakerExposure**(`api`: ApiInterfaceRx): *function*
+▸ **stakerExposure**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stakerExposure.ts:40](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/stakerExposure.ts#L40)*
+*Defined in [packages/api-derive/src/staking/stakerExposure.ts:40](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/stakerExposure.ts#L40)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*

@@ -15,14 +15,15 @@
 
 ###  _ownExposure
 
-▸ **_ownExposure**(`api`: ApiInterfaceRx): *function*
+▸ **_ownExposure**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/ownExposure.ts:16](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/ownExposure.ts#L16)*
+*Defined in [packages/api-derive/src/staking/ownExposure.ts:16](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/ownExposure.ts#L16)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*
@@ -41,14 +42,15 @@ ___
 
 ###  _ownExposures
 
-▸ **_ownExposures**(`api`: ApiInterfaceRx): *function*
+▸ **_ownExposures**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/ownExposure.ts:46](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/ownExposure.ts#L46)*
+*Defined in [packages/api-derive/src/staking/ownExposure.ts:46](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/ownExposure.ts#L46)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*
@@ -67,14 +69,15 @@ ___
 
 ###  ownExposure
 
-▸ **ownExposure**(`api`: ApiInterfaceRx): *function*
+▸ **ownExposure**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/ownExposure.ts:40](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/ownExposure.ts#L40)*
+*Defined in [packages/api-derive/src/staking/ownExposure.ts:40](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/ownExposure.ts#L40)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*
@@ -92,14 +95,15 @@ ___
 
 ###  ownExposures
 
-▸ **ownExposures**(`api`: ApiInterfaceRx): *function*
+▸ **ownExposures**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/ownExposure.ts:56](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/ownExposure.ts#L56)*
+*Defined in [packages/api-derive/src/staking/ownExposure.ts:56](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/ownExposure.ts#L56)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*

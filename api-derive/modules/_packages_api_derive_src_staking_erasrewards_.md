@@ -13,14 +13,15 @@
 
 ###  _erasRewards
 
-▸ **_erasRewards**(`api`: ApiInterfaceRx): *function*
+▸ **_erasRewards**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasRewards.ts:24](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/erasRewards.ts#L24)*
+*Defined in [packages/api-derive/src/staking/erasRewards.ts:24](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/erasRewards.ts#L24)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*
@@ -38,14 +39,15 @@ ___
 
 ###  erasRewards
 
-▸ **erasRewards**(`api`: ApiInterfaceRx): *function*
+▸ **erasRewards**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasRewards.ts:56](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/staking/erasRewards.ts#L56)*
+*Defined in [packages/api-derive/src/staking/erasRewards.ts:56](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/staking/erasRewards.ts#L56)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*

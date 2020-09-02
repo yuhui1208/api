@@ -12,9 +12,9 @@
 
 ###  getHeader
 
-▸ **getHeader**(`api`: ApiInterfaceRx): *function*
+▸ **getHeader**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/chain/getHeader.ts:27](https://github.com/polkadot-js/api/blob/5a90da5df8/packages/api-derive/src/chain/getHeader.ts#L27)*
+*Defined in [packages/api-derive/src/chain/getHeader.ts:27](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api-derive/src/chain/getHeader.ts#L27)*
 
 **`name`** getHeader
 
@@ -33,6 +33,7 @@ console.log(`block #${number} was authored by ${author}`);
 
 Name | Type |
 ------ | ------ |
+`instanceId` | string |
 `api` | ApiInterfaceRx |
 
 **Returns:** *function*
