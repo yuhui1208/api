@@ -14,6 +14,6 @@
 
 ▸ **main**(): *void*
 
-*Defined in [packages/typegen/src/fromDefs.ts:12](https://github.com/polkadot-js/api/blob/430beb9f25/packages/typegen/src/fromDefs.ts#L12)*
+*Defined in [packages/typegen/src/fromDefs.ts:12](https://github.com/polkadot-js/api/blob/40899adf82/packages/typegen/src/fromDefs.ts#L12)*
 
 **Returns:** *void*
