@@ -56,7 +56,7 @@ const api = new Api(provider);
 
 \+ **new WsProvider**(`endpoint`: string | string[], `autoConnectMs`: number | false, `headers`: Record‹string, string›): *[WsProvider](_packages_rpc_provider_src_ws_provider_.wsprovider.md)*
 
-*Defined in [packages/rpc-provider/src/ws/Provider.ts:88](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/rpc-provider/src/ws/Provider.ts#L88)*
+*Defined in [packages/rpc-provider/src/ws/Provider.ts:88](https://github.com/polkadot-js/api/blob/95dd13e218/packages/rpc-provider/src/ws/Provider.ts#L88)*
 
 **Parameters:**
 
@@ -74,7 +74,7 @@ Name | Type | Default | Description |
 
 • **get hasSubscriptions**(): *boolean*
 
-*Defined in [packages/rpc-provider/src/ws/Provider.ts:122](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/rpc-provider/src/ws/Provider.ts#L122)*
+*Defined in [packages/rpc-provider/src/ws/Provider.ts:122](https://github.com/polkadot-js/api/blob/95dd13e218/packages/rpc-provider/src/ws/Provider.ts#L122)*
 
 **`summary`** `true` when this provider supports subscriptions
 
@@ -86,7 +86,7 @@ Name | Type | Default | Description |
 
 ▸ **clone**(): *[WsProvider](_packages_rpc_provider_src_ws_provider_.wsprovider.md)*
 
-*Defined in [packages/rpc-provider/src/ws/Provider.ts:129](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/rpc-provider/src/ws/Provider.ts#L129)*
+*Defined in [packages/rpc-provider/src/ws/Provider.ts:129](https://github.com/polkadot-js/api/blob/95dd13e218/packages/rpc-provider/src/ws/Provider.ts#L129)*
 
 **`description`** Returns a clone of the object
 
@@ -98,7 +98,7 @@ ___
 
 ▸ **connect**(): *Promise‹void›*
 
-*Defined in [packages/rpc-provider/src/ws/Provider.ts:138](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/rpc-provider/src/ws/Provider.ts#L138)*
+*Defined in [packages/rpc-provider/src/ws/Provider.ts:138](https://github.com/polkadot-js/api/blob/95dd13e218/packages/rpc-provider/src/ws/Provider.ts#L138)*
 
 **`summary`** Manually connect
 
@@ -113,7 +113,7 @@ ___
 
 ▸ **disconnect**(): *void*
 
-*Defined in [packages/rpc-provider/src/ws/Provider.ts:161](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/rpc-provider/src/ws/Provider.ts#L161)*
+*Defined in [packages/rpc-provider/src/ws/Provider.ts:161](https://github.com/polkadot-js/api/blob/95dd13e218/packages/rpc-provider/src/ws/Provider.ts#L161)*
 
 **`description`** Manually disconnect from the connection, clearing autoconnect logic
 
@@ -125,7 +125,7 @@ ___
 
 ▸ **isConnected**(): *boolean*
 
-*Defined in [packages/rpc-provider/src/ws/Provider.ts:178](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/rpc-provider/src/ws/Provider.ts#L178)*
+*Defined in [packages/rpc-provider/src/ws/Provider.ts:178](https://github.com/polkadot-js/api/blob/95dd13e218/packages/rpc-provider/src/ws/Provider.ts#L178)*
 
 **`summary`** Whether the node is connected or not.
 
@@ -139,7 +139,7 @@ ___
 
 ▸ **on**(`type`: ProviderInterfaceEmitted, `sub`: ProviderInterfaceEmitCb): *function*
 
-*Defined in [packages/rpc-provider/src/ws/Provider.ts:188](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/rpc-provider/src/ws/Provider.ts#L188)*
+*Defined in [packages/rpc-provider/src/ws/Provider.ts:188](https://github.com/polkadot-js/api/blob/95dd13e218/packages/rpc-provider/src/ws/Provider.ts#L188)*
 
 **`summary`** Listens on events after having subscribed using the [subscribe](_packages_rpc_provider_src_ws_provider_.wsprovider.md#subscribe) function.
 
@@ -162,7 +162,7 @@ ___
 
 ▸ **send**(`method`: string, `params`: any[], `subscription?`: SubscriptionHandler): *Promise‹any›*
 
-*Defined in [packages/rpc-provider/src/ws/Provider.ts:202](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/rpc-provider/src/ws/Provider.ts#L202)*
+*Defined in [packages/rpc-provider/src/ws/Provider.ts:202](https://github.com/polkadot-js/api/blob/95dd13e218/packages/rpc-provider/src/ws/Provider.ts#L202)*
 
 **`summary`** Send JSON data using WebSockets to configured HTTP Endpoint or queue.
 
@@ -182,7 +182,7 @@ ___
 
 ▸ **subscribe**(`type`: string, `method`: string, `params`: any[], `callback`: ProviderInterfaceCallback): *Promise‹number | string›*
 
-*Defined in [packages/rpc-provider/src/ws/Provider.ts:257](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/rpc-provider/src/ws/Provider.ts#L257)*
+*Defined in [packages/rpc-provider/src/ws/Provider.ts:257](https://github.com/polkadot-js/api/blob/95dd13e218/packages/rpc-provider/src/ws/Provider.ts#L257)*
 
 **`name`** subscribe
 
@@ -221,7 +221,7 @@ ___
 
 ▸ **unsubscribe**(`type`: string, `method`: string, `id`: number | string): *Promise‹boolean›*
 
-*Defined in [packages/rpc-provider/src/ws/Provider.ts:266](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/rpc-provider/src/ws/Provider.ts#L266)*
+*Defined in [packages/rpc-provider/src/ws/Provider.ts:266](https://github.com/polkadot-js/api/blob/95dd13e218/packages/rpc-provider/src/ws/Provider.ts#L266)*
 
 **`summary`** Allows unsubscribing to subscriptions made with [subscribe](_packages_rpc_provider_src_ws_provider_.wsprovider.md#subscribe).
 

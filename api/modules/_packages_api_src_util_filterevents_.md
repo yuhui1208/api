@@ -14,7 +14,7 @@
 
 ▸ **filterEvents**(`extHash`: H256, `__namedParameters`: object, `allEvents`: EventRecord[], `status`: ExtrinsicStatus): *EventRecord[] | undefined*
 
-*Defined in [packages/api/src/util/filterEvents.ts:9](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/api/src/util/filterEvents.ts#L9)*
+*Defined in [packages/api/src/util/filterEvents.ts:9](https://github.com/polkadot-js/api/blob/95dd13e218/packages/api/src/util/filterEvents.ts#L9)*
 
 **Parameters:**
 

@@ -19,7 +19,7 @@
 
 • **genesisHash**: *[Uint8Array](../classes/_packages_types_src_codec_raw_.raw.md#static-uint8array)*
 
-*Defined in [packages/types/src/types/registry.ts:27](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/types/src/types/registry.ts#L27)*
+*Defined in [packages/types/src/types/registry.ts:27](https://github.com/polkadot-js/api/blob/95dd13e218/packages/types/src/types/registry.ts#L27)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **versions**: *[ChainUpgradeVersion](_packages_types_src_types_registry_.chainupgradeversion.md)[]*
 
-*Defined in [packages/types/src/types/registry.ts:28](https://github.com/polkadot-js/api/blob/b6d1be6ee5/packages/types/src/types/registry.ts#L28)*
+*Defined in [packages/types/src/types/registry.ts:28](https://github.com/polkadot-js/api/blob/95dd13e218/packages/types/src/types/registry.ts#L28)*
