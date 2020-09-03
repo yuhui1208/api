@@ -18,7 +18,7 @@
 
 ▸ **_stakerRewards**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stakerRewards.ts:174](https://github.com/polkadot-js/api/blob/40899adf82/packages/api-derive/src/staking/stakerRewards.ts#L174)*
+*Defined in [packages/api-derive/src/staking/stakerRewards.ts:174](https://github.com/polkadot-js/api/blob/6ae75ba92e/packages/api-derive/src/staking/stakerRewards.ts#L174)*
 
 **Parameters:**
 
@@ -45,7 +45,7 @@ ___
 
 ▸ **_stakerRewardsEras**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stakerRewards.ts:161](https://github.com/polkadot-js/api/blob/40899adf82/packages/api-derive/src/staking/stakerRewards.ts#L161)*
+*Defined in [packages/api-derive/src/staking/stakerRewards.ts:161](https://github.com/polkadot-js/api/blob/6ae75ba92e/packages/api-derive/src/staking/stakerRewards.ts#L161)*
 
 **Parameters:**
 
@@ -71,7 +71,7 @@ ___
 
 ▸ **stakerRewards**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stakerRewards.ts:194](https://github.com/polkadot-js/api/blob/40899adf82/packages/api-derive/src/staking/stakerRewards.ts#L194)*
+*Defined in [packages/api-derive/src/staking/stakerRewards.ts:194](https://github.com/polkadot-js/api/blob/6ae75ba92e/packages/api-derive/src/staking/stakerRewards.ts#L194)*
 
 **Parameters:**
 
@@ -97,7 +97,7 @@ ___
 
 ▸ **stakerRewardsMulti**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stakerRewards.ts:210](https://github.com/polkadot-js/api/blob/40899adf82/packages/api-derive/src/staking/stakerRewards.ts#L210)*
+*Defined in [packages/api-derive/src/staking/stakerRewards.ts:210](https://github.com/polkadot-js/api/blob/6ae75ba92e/packages/api-derive/src/staking/stakerRewards.ts#L210)*
 
 **Parameters:**
 
@@ -108,13 +108,13 @@ Name | Type |
 
 **Returns:** *function*
 
-▸ (`accountIds`: (string | Uint8Array‹›)[], `withActive?`: undefined | false | true): *Observable‹DeriveStakerReward[][]›*
+▸ (`accountIds`: (Uint8Array | string)[], `withActive?`: undefined | false | true): *Observable‹DeriveStakerReward[][]›*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`accountIds` | (string &#124; Uint8Array‹›)[] |
+`accountIds` | (Uint8Array &#124; string)[] |
 `withActive?` | undefined &#124; false &#124; true |
 
 ___
@@ -123,7 +123,7 @@ ___
 
 ▸ **stakerRewardsMultiEras**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stakerRewards.ts:202](https://github.com/polkadot-js/api/blob/40899adf82/packages/api-derive/src/staking/stakerRewards.ts#L202)*
+*Defined in [packages/api-derive/src/staking/stakerRewards.ts:202](https://github.com/polkadot-js/api/blob/6ae75ba92e/packages/api-derive/src/staking/stakerRewards.ts#L202)*
 
 **Parameters:**
 
@@ -134,11 +134,11 @@ Name | Type |
 
 **Returns:** *function*
 
-▸ (`accountIds`: (string | Uint8Array‹›)[], `eras`: EraIndex[]): *Observable‹DeriveStakerReward[][]›*
+▸ (`accountIds`: (Uint8Array | string)[], `eras`: EraIndex[]): *Observable‹DeriveStakerReward[][]›*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`accountIds` | (string &#124; Uint8Array‹›)[] |
+`accountIds` | (Uint8Array &#124; string)[] |
 `eras` | EraIndex[] |

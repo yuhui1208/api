@@ -15,7 +15,7 @@
 
 ▸ **account**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/account.ts:75](https://github.com/polkadot-js/api/blob/40899adf82/packages/api-derive/src/staking/account.ts#L75)*
+*Defined in [packages/api-derive/src/staking/account.ts:75](https://github.com/polkadot-js/api/blob/6ae75ba92e/packages/api-derive/src/staking/account.ts#L75)*
 
 **`description`** From a stash, retrieve the controllerId and fill in all the relevant staking details
 
@@ -42,7 +42,7 @@ ___
 
 ▸ **accounts**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/account.ts:60](https://github.com/polkadot-js/api/blob/40899adf82/packages/api-derive/src/staking/account.ts#L60)*
+*Defined in [packages/api-derive/src/staking/account.ts:60](https://github.com/polkadot-js/api/blob/6ae75ba92e/packages/api-derive/src/staking/account.ts#L60)*
 
 **`description`** From a list of stashes, fill in all the relevant staking details
 
@@ -55,10 +55,10 @@ Name | Type |
 
 **Returns:** *function*
 
-▸ (`accountIds`: (string | Uint8Array‹›)[]): *Observable‹DeriveStakingAccount[]›*
+▸ (`accountIds`: (Uint8Array | string)[]): *Observable‹DeriveStakingAccount[]›*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`accountIds` | (string &#124; Uint8Array‹›)[] |
+`accountIds` | (Uint8Array &#124; string)[] |
