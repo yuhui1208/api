@@ -14,7 +14,7 @@
 
 ▸ **bestNumber**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/chain/bestNumber.ts:25](https://github.com/polkadot-js/api/blob/825365bb13/packages/api-derive/src/chain/bestNumber.ts#L25)*
+*Defined in [packages/api-derive/src/chain/bestNumber.ts:25](https://github.com/polkadot-js/api/blob/00bc441f0e/packages/api-derive/src/chain/bestNumber.ts#L25)*
 
 **`name`** bestNumber
 

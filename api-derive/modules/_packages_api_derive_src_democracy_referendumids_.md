@@ -14,7 +14,7 @@
 
 ▸ **referendumIds**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/democracy/referendumIds.ts:14](https://github.com/polkadot-js/api/blob/825365bb13/packages/api-derive/src/democracy/referendumIds.ts#L14)*
+*Defined in [packages/api-derive/src/democracy/referendumIds.ts:14](https://github.com/polkadot-js/api/blob/00bc441f0e/packages/api-derive/src/democracy/referendumIds.ts#L14)*
 
 **Parameters:**
 
