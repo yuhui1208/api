@@ -19,7 +19,7 @@
 
 • **minmax**: *[undefined | number, undefined | number]*
 
-*Defined in [packages/types/src/types/registry.ts:95](https://github.com/polkadot-js/api/blob/00bc441f0e/packages/types/src/types/registry.ts#L95)*
+*Defined in [packages/types/src/types/registry.ts:95](https://github.com/polkadot-js/api/blob/3151c08aca/packages/types/src/types/registry.ts#L95)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **types**: *[RegistryTypes](../modules/_packages_types_src_types_registry_.md#registrytypes)*
 
-*Defined in [packages/types/src/types/registry.ts:96](https://github.com/polkadot-js/api/blob/00bc441f0e/packages/types/src/types/registry.ts#L96)*
+*Defined in [packages/types/src/types/registry.ts:96](https://github.com/polkadot-js/api/blob/3151c08aca/packages/types/src/types/registry.ts#L96)*
