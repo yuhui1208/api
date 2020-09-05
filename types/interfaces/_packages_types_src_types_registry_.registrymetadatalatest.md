@@ -19,7 +19,7 @@
 
 • **extrinsic**: *[RegistryMetadataExtrinsic](_packages_types_src_types_registry_.registrymetadataextrinsic.md)*
 
-*Defined in [packages/types/src/types/registry.ts:87](https://github.com/polkadot-js/api/blob/3151c08aca/packages/types/src/types/registry.ts#L87)*
+*Defined in [packages/types/src/types/registry.ts:87](https://github.com/polkadot-js/api/blob/5af98cc89e/packages/types/src/types/registry.ts#L87)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **modules**: *[RegistryMetadataModule](_packages_types_src_types_registry_.registrymetadatamodule.md)[]*
 
-*Defined in [packages/types/src/types/registry.ts:86](https://github.com/polkadot-js/api/blob/3151c08aca/packages/types/src/types/registry.ts#L86)*
+*Defined in [packages/types/src/types/registry.ts:86](https://github.com/polkadot-js/api/blob/5af98cc89e/packages/types/src/types/registry.ts#L86)*

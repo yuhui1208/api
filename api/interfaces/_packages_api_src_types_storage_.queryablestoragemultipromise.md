@@ -14,7 +14,7 @@
 
 ▸ ‹**T**›(`calls`: [QueryableStorageMultiArg](../modules/_packages_api_src_types_storage_.md#queryablestoragemultiarg)‹ApiType›[], `callback`: Callback‹T›): *[UnsubscribePromise](../modules/_packages_api_src_types_base_.md#unsubscribepromise)*
 
-*Defined in [packages/api/src/types/storage.ts:67](https://github.com/polkadot-js/api/blob/3151c08aca/packages/api/src/types/storage.ts#L67)*
+*Defined in [packages/api/src/types/storage.ts:67](https://github.com/polkadot-js/api/blob/5af98cc89e/packages/api/src/types/storage.ts#L67)*
 
 **Type parameters:**
 
@@ -31,7 +31,7 @@ Name | Type |
 
 ▸ ‹**T**›(`calls`: [QueryableStorageMultiArg](../modules/_packages_api_src_types_storage_.md#queryablestoragemultiarg)‹ApiType›[]): *Promise‹T›*
 
-*Defined in [packages/api/src/types/storage.ts:68](https://github.com/polkadot-js/api/blob/3151c08aca/packages/api/src/types/storage.ts#L68)*
+*Defined in [packages/api/src/types/storage.ts:68](https://github.com/polkadot-js/api/blob/5af98cc89e/packages/api/src/types/storage.ts#L68)*
 
 **Type parameters:**
 

@@ -14,7 +14,7 @@
 
 ▸ **getHeader**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/chain/getBlock.ts:26](https://github.com/polkadot-js/api/blob/3151c08aca/packages/api-derive/src/chain/getBlock.ts#L26)*
+*Defined in [packages/api-derive/src/chain/getBlock.ts:26](https://github.com/polkadot-js/api/blob/5af98cc89e/packages/api-derive/src/chain/getBlock.ts#L26)*
 
 **`name`** getBlock
 
