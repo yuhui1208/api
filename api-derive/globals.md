@@ -64,6 +64,7 @@
 * ["packages/api-derive/src/staking/erasPrefs"](modules/_packages_api_derive_src_staking_erasprefs_.md)
 * ["packages/api-derive/src/staking/erasRewards"](modules/_packages_api_derive_src_staking_erasrewards_.md)
 * ["packages/api-derive/src/staking/erasSlashes"](modules/_packages_api_derive_src_staking_erasslashes_.md)
+* ["packages/api-derive/src/staking/keys"](modules/_packages_api_derive_src_staking_keys_.md)
 * ["packages/api-derive/src/staking/overview"](modules/_packages_api_derive_src_staking_overview_.md)
 * ["packages/api-derive/src/staking/ownExposure"](modules/_packages_api_derive_src_staking_ownexposure_.md)
 * ["packages/api-derive/src/staking/ownSlashes"](modules/_packages_api_derive_src_staking_ownslashes_.md)
