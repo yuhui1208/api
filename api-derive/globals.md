@@ -71,6 +71,7 @@
 * ["packages/api-derive/src/staking/query"](modules/_packages_api_derive_src_staking_query_.md)
 * ["packages/api-derive/src/staking/stakerExposure"](modules/_packages_api_derive_src_staking_stakerexposure_.md)
 * ["packages/api-derive/src/staking/stakerPoints"](modules/_packages_api_derive_src_staking_stakerpoints_.md)
+* ["packages/api-derive/src/staking/stakerPrefs"](modules/_packages_api_derive_src_staking_stakerprefs_.md)
 * ["packages/api-derive/src/staking/stakerRewards"](modules/_packages_api_derive_src_staking_stakerrewards_.md)
 * ["packages/api-derive/src/staking/stakerSlashes"](modules/_packages_api_derive_src_staking_stakerslashes_.md)
 * ["packages/api-derive/src/staking/stashes"](modules/_packages_api_derive_src_staking_stashes_.md)
