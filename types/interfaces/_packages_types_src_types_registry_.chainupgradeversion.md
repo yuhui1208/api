@@ -19,7 +19,7 @@
 
 • **blockNumber**: *BN*
 
-*Defined in [packages/types/src/types/registry.ts:17](https://github.com/polkadot-js/api/blob/2c3ef10513/packages/types/src/types/registry.ts#L17)*
+*Defined in [packages/types/src/types/registry.ts:17](https://github.com/polkadot-js/api/blob/0a8d2e5ac1/packages/types/src/types/registry.ts#L17)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **specVersion**: *BN*
 
-*Defined in [packages/types/src/types/registry.ts:18](https://github.com/polkadot-js/api/blob/2c3ef10513/packages/types/src/types/registry.ts#L18)*
+*Defined in [packages/types/src/types/registry.ts:18](https://github.com/polkadot-js/api/blob/0a8d2e5ac1/packages/types/src/types/registry.ts#L18)*

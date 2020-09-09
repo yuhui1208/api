@@ -15,7 +15,7 @@
 
 ▸ **_stakerExposure**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stakerExposure.ts:14](https://github.com/polkadot-js/api/blob/2c3ef10513/packages/api-derive/src/staking/stakerExposure.ts#L14)*
+*Defined in [packages/api-derive/src/staking/stakerExposure.ts:14](https://github.com/polkadot-js/api/blob/0a8d2e5ac1/packages/api-derive/src/staking/stakerExposure.ts#L14)*
 
 **Parameters:**
 
@@ -42,7 +42,7 @@ ___
 
 ▸ **stakerExposure**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stakerExposure.ts:40](https://github.com/polkadot-js/api/blob/2c3ef10513/packages/api-derive/src/staking/stakerExposure.ts#L40)*
+*Defined in [packages/api-derive/src/staking/stakerExposure.ts:40](https://github.com/polkadot-js/api/blob/0a8d2e5ac1/packages/api-derive/src/staking/stakerExposure.ts#L40)*
 
 **Parameters:**
 
