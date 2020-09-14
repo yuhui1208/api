@@ -15,7 +15,7 @@
 
 ▸ **createWS**(`endpoint`: string, `headers?`: Record‹string, string›): *Promise‹WebSocket›*
 
-*Defined in [packages/rpc-provider/src/ws/getWS.ts:15](https://github.com/polkadot-js/api/blob/918bb73547/packages/rpc-provider/src/ws/getWS.ts#L15)*
+*Defined in [packages/rpc-provider/src/ws/getWS.ts:15](https://github.com/polkadot-js/api/blob/24d8915005/packages/rpc-provider/src/ws/getWS.ts#L15)*
 
 **Parameters:**
 
@@ -32,6 +32,6 @@ ___
 
 ▸ **getWSClass**(): *Promise‹[typeof WebSocket, boolean]›*
 
-*Defined in [packages/rpc-provider/src/ws/getWS.ts:5](https://github.com/polkadot-js/api/blob/918bb73547/packages/rpc-provider/src/ws/getWS.ts#L5)*
+*Defined in [packages/rpc-provider/src/ws/getWS.ts:5](https://github.com/polkadot-js/api/blob/24d8915005/packages/rpc-provider/src/ws/getWS.ts#L5)*
 
 **Returns:** *Promise‹[typeof WebSocket, boolean]›*

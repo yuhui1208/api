@@ -16,7 +16,7 @@
 
 ▸ (...`args`: Parameters‹F›): *Observable‹[ObsInnerType](../modules/_packages_api_src_types_base_.md#obsinnertype)‹ReturnType‹F›››*
 
-*Defined in [packages/api/src/types/base.ts:52](https://github.com/polkadot-js/api/blob/918bb73547/packages/api/src/types/base.ts#L52)*
+*Defined in [packages/api/src/types/base.ts:52](https://github.com/polkadot-js/api/blob/24d8915005/packages/api/src/types/base.ts#L52)*
 
 **Parameters:**
 
@@ -28,7 +28,7 @@ Name | Type |
 
 ▸ ‹**T**›(...`args`: Parameters‹F›): *Observable‹T›*
 
-*Defined in [packages/api/src/types/base.ts:53](https://github.com/polkadot-js/api/blob/918bb73547/packages/api/src/types/base.ts#L53)*
+*Defined in [packages/api/src/types/base.ts:53](https://github.com/polkadot-js/api/blob/24d8915005/packages/api/src/types/base.ts#L53)*
 
 **Type parameters:**
 
@@ -54,7 +54,7 @@ Name | Type |
 
 ▸ **raw**(...`args`: Parameters‹F›): *Observable‹Uint8Array & Codec›*
 
-*Defined in [packages/api/src/types/rpc.ts:14](https://github.com/polkadot-js/api/blob/918bb73547/packages/api/src/types/rpc.ts#L14)*
+*Defined in [packages/api/src/types/rpc.ts:14](https://github.com/polkadot-js/api/blob/24d8915005/packages/api/src/types/rpc.ts#L14)*
 
 **Parameters:**
 
