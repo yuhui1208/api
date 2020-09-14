@@ -46,7 +46,7 @@
 
 *Inherited from [AugmentedConsts](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md).[babe](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md#babe)*
 
-*Defined in [packages/api/src/augment/consts.ts:15](https://github.com/polkadot-js/api/blob/e7be062522/packages/api/src/augment/consts.ts#L15)*
+*Defined in [packages/api/src/augment/consts.ts:15](https://github.com/polkadot-js/api/blob/dac3261a16/packages/api/src/augment/consts.ts#L15)*
 
 #### Type declaration:
 
@@ -64,7 +64,7 @@ ___
 
 *Inherited from [AugmentedConsts](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md).[balances](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md#balances)*
 
-*Defined in [packages/api/src/augment/consts.ts:31](https://github.com/polkadot-js/api/blob/e7be062522/packages/api/src/augment/consts.ts#L31)*
+*Defined in [packages/api/src/augment/consts.ts:31](https://github.com/polkadot-js/api/blob/dac3261a16/packages/api/src/augment/consts.ts#L31)*
 
 #### Type declaration:
 
@@ -80,7 +80,7 @@ ___
 
 *Inherited from [AugmentedConsts](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md).[contracts](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md#contracts)*
 
-*Defined in [packages/api/src/augment/consts.ts:38](https://github.com/polkadot-js/api/blob/e7be062522/packages/api/src/augment/consts.ts#L38)*
+*Defined in [packages/api/src/augment/consts.ts:38](https://github.com/polkadot-js/api/blob/dac3261a16/packages/api/src/augment/consts.ts#L38)*
 
 #### Type declaration:
 
@@ -110,7 +110,7 @@ ___
 
 *Inherited from [AugmentedConsts](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md).[democracy](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md#democracy)*
 
-*Defined in [packages/api/src/augment/consts.ts:89](https://github.com/polkadot-js/api/blob/e7be062522/packages/api/src/augment/consts.ts#L89)*
+*Defined in [packages/api/src/augment/consts.ts:89](https://github.com/polkadot-js/api/blob/dac3261a16/packages/api/src/augment/consts.ts#L89)*
 
 #### Type declaration:
 
@@ -140,7 +140,7 @@ ___
 
 *Inherited from [AugmentedConsts](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md).[elections](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md#elections)*
 
-*Defined in [packages/api/src/augment/consts.ts:128](https://github.com/polkadot-js/api/blob/e7be062522/packages/api/src/augment/consts.ts#L128)*
+*Defined in [packages/api/src/augment/consts.ts:128](https://github.com/polkadot-js/api/blob/dac3261a16/packages/api/src/augment/consts.ts#L128)*
 
 #### Type declaration:
 
@@ -166,7 +166,7 @@ ___
 
 *Inherited from [AugmentedConsts](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md).[finalityTracker](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md#finalitytracker)*
 
-*Defined in [packages/api/src/augment/consts.ts:137](https://github.com/polkadot-js/api/blob/e7be062522/packages/api/src/augment/consts.ts#L137)*
+*Defined in [packages/api/src/augment/consts.ts:137](https://github.com/polkadot-js/api/blob/dac3261a16/packages/api/src/augment/consts.ts#L137)*
 
 #### Type declaration:
 
@@ -184,7 +184,7 @@ ___
 
 *Inherited from [AugmentedConsts](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md).[identity](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md#identity)*
 
-*Defined in [packages/api/src/augment/consts.ts:148](https://github.com/polkadot-js/api/blob/e7be062522/packages/api/src/augment/consts.ts#L148)*
+*Defined in [packages/api/src/augment/consts.ts:148](https://github.com/polkadot-js/api/blob/dac3261a16/packages/api/src/augment/consts.ts#L148)*
 
 #### Type declaration:
 
@@ -210,7 +210,7 @@ ___
 
 *Inherited from [AugmentedConsts](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md).[indices](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md#indices)*
 
-*Defined in [packages/api/src/augment/consts.ts:179](https://github.com/polkadot-js/api/blob/e7be062522/packages/api/src/augment/consts.ts#L179)*
+*Defined in [packages/api/src/augment/consts.ts:179](https://github.com/polkadot-js/api/blob/dac3261a16/packages/api/src/augment/consts.ts#L179)*
 
 #### Type declaration:
 
@@ -226,7 +226,7 @@ ___
 
 *Inherited from [AugmentedConsts](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md).[proxy](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md#proxy)*
 
-*Defined in [packages/api/src/augment/consts.ts:186](https://github.com/polkadot-js/api/blob/e7be062522/packages/api/src/augment/consts.ts#L186)*
+*Defined in [packages/api/src/augment/consts.ts:186](https://github.com/polkadot-js/api/blob/dac3261a16/packages/api/src/augment/consts.ts#L186)*
 
 #### Type declaration:
 
@@ -252,7 +252,7 @@ ___
 
 *Inherited from [AugmentedConsts](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md).[recovery](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md#recovery)*
 
-*Defined in [packages/api/src/augment/consts.ts:213](https://github.com/polkadot-js/api/blob/e7be062522/packages/api/src/augment/consts.ts#L213)*
+*Defined in [packages/api/src/augment/consts.ts:213](https://github.com/polkadot-js/api/blob/dac3261a16/packages/api/src/augment/consts.ts#L213)*
 
 #### Type declaration:
 
@@ -274,7 +274,7 @@ ___
 
 *Inherited from [AugmentedConsts](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md).[society](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md#society)*
 
-*Defined in [packages/api/src/augment/consts.ts:232](https://github.com/polkadot-js/api/blob/e7be062522/packages/api/src/augment/consts.ts#L232)*
+*Defined in [packages/api/src/augment/consts.ts:232](https://github.com/polkadot-js/api/blob/dac3261a16/packages/api/src/augment/consts.ts#L232)*
 
 #### Type declaration:
 
@@ -302,7 +302,7 @@ ___
 
 *Inherited from [AugmentedConsts](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md).[staking](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md#staking)*
 
-*Defined in [packages/api/src/augment/consts.ts:265](https://github.com/polkadot-js/api/blob/e7be062522/packages/api/src/augment/consts.ts#L265)*
+*Defined in [packages/api/src/augment/consts.ts:265](https://github.com/polkadot-js/api/blob/dac3261a16/packages/api/src/augment/consts.ts#L265)*
 
 #### Type declaration:
 
@@ -330,7 +330,7 @@ ___
 
 *Inherited from [AugmentedConsts](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md).[system](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md#system)*
 
-*Defined in [packages/api/src/augment/consts.ts:311](https://github.com/polkadot-js/api/blob/e7be062522/packages/api/src/augment/consts.ts#L311)*
+*Defined in [packages/api/src/augment/consts.ts:311](https://github.com/polkadot-js/api/blob/dac3261a16/packages/api/src/augment/consts.ts#L311)*
 
 #### Type declaration:
 
@@ -356,7 +356,7 @@ ___
 
 *Inherited from [AugmentedConsts](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md).[timestamp](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md#timestamp)*
 
-*Defined in [packages/api/src/augment/consts.ts:338](https://github.com/polkadot-js/api/blob/e7be062522/packages/api/src/augment/consts.ts#L338)*
+*Defined in [packages/api/src/augment/consts.ts:338](https://github.com/polkadot-js/api/blob/dac3261a16/packages/api/src/augment/consts.ts#L338)*
 
 #### Type declaration:
 
@@ -372,7 +372,7 @@ ___
 
 *Inherited from [AugmentedConsts](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md).[transactionPayment](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md#transactionpayment)*
 
-*Defined in [packages/api/src/augment/consts.ts:348](https://github.com/polkadot-js/api/blob/e7be062522/packages/api/src/augment/consts.ts#L348)*
+*Defined in [packages/api/src/augment/consts.ts:348](https://github.com/polkadot-js/api/blob/dac3261a16/packages/api/src/augment/consts.ts#L348)*
 
 #### Type declaration:
 
@@ -390,7 +390,7 @@ ___
 
 *Inherited from [AugmentedConsts](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md).[treasury](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md#treasury)*
 
-*Defined in [packages/api/src/augment/consts.ts:359](https://github.com/polkadot-js/api/blob/e7be062522/packages/api/src/augment/consts.ts#L359)*
+*Defined in [packages/api/src/augment/consts.ts:359](https://github.com/polkadot-js/api/blob/dac3261a16/packages/api/src/augment/consts.ts#L359)*
 
 #### Type declaration:
 
@@ -422,7 +422,7 @@ ___
 
 *Inherited from [AugmentedConsts](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md).[vesting](_packages_api_src_augment_consts_._api_types_consts_.augmentedconsts.md#vesting)*
 
-*Defined in [packages/api/src/augment/consts.ts:399](https://github.com/polkadot-js/api/blob/e7be062522/packages/api/src/augment/consts.ts#L399)*
+*Defined in [packages/api/src/augment/consts.ts:399](https://github.com/polkadot-js/api/blob/dac3261a16/packages/api/src/augment/consts.ts#L399)*
 
 #### Type declaration:
 

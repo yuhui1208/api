@@ -19,7 +19,7 @@
 
 • **methodName**? : *undefined | string*
 
-*Defined in [packages/api/src/types/base.ts:73](https://github.com/polkadot-js/api/blob/e7be062522/packages/api/src/types/base.ts#L73)*
+*Defined in [packages/api/src/types/base.ts:73](https://github.com/polkadot-js/api/blob/dac3261a16/packages/api/src/types/base.ts#L73)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **overrideNoSub**? : *undefined | function*
 
-*Defined in [packages/api/src/types/base.ts:74](https://github.com/polkadot-js/api/blob/e7be062522/packages/api/src/types/base.ts#L74)*
+*Defined in [packages/api/src/types/base.ts:74](https://github.com/polkadot-js/api/blob/dac3261a16/packages/api/src/types/base.ts#L74)*

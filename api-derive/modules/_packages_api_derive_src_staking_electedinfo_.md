@@ -14,7 +14,7 @@
 
 ▸ **electedInfo**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/electedInfo.ts:13](https://github.com/polkadot-js/api/blob/e7be062522/packages/api-derive/src/staking/electedInfo.ts#L13)*
+*Defined in [packages/api-derive/src/staking/electedInfo.ts:13](https://github.com/polkadot-js/api/blob/dac3261a16/packages/api-derive/src/staking/electedInfo.ts#L13)*
 
 **Parameters:**
 

@@ -20,6 +20,8 @@ The following sections contain the module constants, also known as parameter typ
 
 - **[indices](#indices)**
 
+- **[multisig](#multisig)**
+
 - **[proxy](#proxy)**
 
 - **[recovery](#recovery)**
@@ -216,6 +218,23 @@ ___
 ### deposit: `BalanceOf`
 - **interface**: `api.consts.indices.deposit`
 - **summary**:   The deposit needed for reserving an index. 
+
+___
+
+
+## multisig
+ 
+### depositBase: `BalanceOf`
+- **interface**: `api.consts.multisig.depositBase`
+- **summary**:   The base amount of currency needed to reserve for creating a multisig execution or to store a dispatch call for later. 
+ 
+### depositFactor: `BalanceOf`
+- **interface**: `api.consts.multisig.depositFactor`
+- **summary**:   The amount of currency needed per unit threshold when creating a multisig execution. 
+ 
+### maxSignatories: `u16`
+- **interface**: `api.consts.multisig.maxSignatories`
+- **summary**:   The maximum amount of signatories allowed for a given multisig. 
 
 ___
 
