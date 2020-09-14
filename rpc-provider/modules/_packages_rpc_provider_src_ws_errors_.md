@@ -14,7 +14,7 @@
 
 ▸ **getWSErrorString**(`code`: number): *string*
 
-*Defined in [packages/rpc-provider/src/ws/errors.ts:26](https://github.com/polkadot-js/api/blob/e425a38a7c/packages/rpc-provider/src/ws/errors.ts#L26)*
+*Defined in [packages/rpc-provider/src/ws/errors.ts:26](https://github.com/polkadot-js/api/blob/918bb73547/packages/rpc-provider/src/ws/errors.ts#L26)*
 
 **Parameters:**
 

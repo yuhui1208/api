@@ -15,7 +15,7 @@
 
 ▸ **_stakerPrefs**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stakerPrefs.ts:14](https://github.com/polkadot-js/api/blob/e425a38a7c/packages/api-derive/src/staking/stakerPrefs.ts#L14)*
+*Defined in [packages/api-derive/src/staking/stakerPrefs.ts:14](https://github.com/polkadot-js/api/blob/918bb73547/packages/api-derive/src/staking/stakerPrefs.ts#L14)*
 
 **Parameters:**
 
@@ -42,7 +42,7 @@ ___
 
 ▸ **stakerPrefs**(`instanceId`: string, `api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stakerPrefs.ts:28](https://github.com/polkadot-js/api/blob/e425a38a7c/packages/api-derive/src/staking/stakerPrefs.ts#L28)*
+*Defined in [packages/api-derive/src/staking/stakerPrefs.ts:28](https://github.com/polkadot-js/api/blob/918bb73547/packages/api-derive/src/staking/stakerPrefs.ts#L28)*
 
 **Parameters:**
 
